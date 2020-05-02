@@ -17,8 +17,8 @@ export default class HomePage extends Component {
         <Header />
         <section className="home">
           <div className="container">
-            <h1 className="title is-1">
-              Welcome FTL's first online hackathon!
+            <h1 className="title is-1 welcome-title">
+              Welcome to <br/>FTL's first online hackathon!
             </h1>
           </div>
           <div className="container teaser">
@@ -57,7 +57,7 @@ export default class HomePage extends Component {
                   Register as a participant
                 </a>
                 <a
-                  className="button is-link"
+                  className="button is-outlined is-secondary"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeyQuo5D3YgYvpS4HQqLgDNguGRRA_94ZKchA5FEqiBEczMdw/viewform"
                 >
                   Apply to be a speaker

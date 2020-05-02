@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
-$purple: #8a4d76;
-$pink: #fa7c91;
-$brown: #757763;
+$purple: #7f00f9;
+$purple-dark: #78125b;
+$yellow: #fff55d;
+$pink: #fb41b9;
+$pink-light: #fad1ef;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
@@ -18,6 +20,15 @@ $primary: $pink;
 // $link: $pink;
 // $widescreen-enabled: false;
 // $fullhd-enabled: false;
+
+
+$secondary: #8BC91D;
+$secondary-invert: findColorInvert($secondary) !default;
+
+$custom-colors: (
+    "secondary":($secondary, $secondary-invert),
+    "outlined": ($secondary, white)
+);
 
 // Update some of Bulma's component variables
 // $body-background-color: $beige-lighter;
