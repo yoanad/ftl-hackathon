@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home';
-// import Chat from './pages/Chat';
 import SignUp from './pages/SignUp.js';
 import Login from './pages/Login';
 import Idea from './pages/Ideas';
@@ -65,7 +64,7 @@ export default class App extends Component {
     return this.state.loading === true ? <h2>Loading...</h2> : (
       <Router>
         <Switch>
-          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/" authenticated={this.state.authenticated} component={Home}></Route>
           <PrivateRoute path="/ideas" authenticated={this.state.authenticated} component={Idea}></PrivateRoute>
           <PublicRoute path="/signup" authenticated={this.state.authenticated} component={SignUp}></PublicRoute>
           <PublicRoute path="/login" authenticated={this.state.authenticated} component={Login}></PublicRoute>
