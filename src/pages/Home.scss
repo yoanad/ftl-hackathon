@@ -1,0 +1,38 @@
+$yellow: #fff55d;
+$pink: #fb41b9;
+
+.home {
+  .welcome-title {
+    background-image: linear-gradient($yellow, $yellow);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 100% 2px;
+    transition: background-size .5s, background-position .3s ease-in .5s;
+    width: 50%;
+    font-weight: bold;
+
+    &:hover {
+      transition: background-position .5s, background-size .3s ease-in .5s;
+      background-size: 100% 100%;
+      background-position: 0% 0%;
+    }
+  }
+
+  .container.teaser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teaser-text {
+    padding-right: 30px;
+  }
+
+  .teaser-image {
+    padding: 5%;
+  }
+
+  .button {
+    margin: 15px 15px 0px 0px;
+  }
+}
