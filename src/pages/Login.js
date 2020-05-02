@@ -58,7 +58,7 @@ export default class Login extends Component {
           <h1>
             Login to
             <Link className="title ml-2" to="/">
-              Chatty
+              FTL Hackathon
             </Link>
           </h1>
           <p className="lead">

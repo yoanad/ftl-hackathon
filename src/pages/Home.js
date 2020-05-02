@@ -19,7 +19,6 @@ export default class HomePage extends Component {
               <h1 className="title is-1">
                 Welcome FTL's first online hackathon!
               </h1>
-              <p className="lead">{this.authenticated}</p>
               <div>
                 <div style={{ padding: "5px 15px 5px 15px" }}>
                   <h2 className="title is-2">Initiative</h2>
@@ -49,6 +48,12 @@ export default class HomePage extends Component {
                       Join us, for an “Introduction to Big Data: COVID-19 and
                       Today’s Global Economy”.
                     </p>
+                    <a className="button is-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform">
+                      Register as a participant
+                    </a>
+                    <a className="button is-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeyQuo5D3YgYvpS4HQqLgDNguGRRA_94ZKchA5FEqiBEczMdw/viewform">
+                      Apply to be a speaker
+                    </a>
                   </div>
                   <div>
                     <h3 className="title is-3">Tracks</h3>

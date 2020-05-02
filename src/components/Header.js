@@ -6,28 +6,28 @@ import { signOut } from "../helpers/auth";
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    
+
     this.signOut = this.signOut.bind(this);
 
     this.state = {
-        authenticated: false
-    }
+      authenticated: false,
+    };
   }
 
   async componentDidMount() {
     auth().onAuthStateChanged((user) => {
-        if (user) {
-          this.setState({
-            authenticated: true,
-            loading: false,
-          });
-        } else {
-          this.setState({
-            authenticated: false,
-            loading: false,
-          });
-        }
-      })
+      if (user) {
+        this.setState({
+          authenticated: true,
+          loading: false,
+        });
+      } else {
+        this.setState({
+          authenticated: false,
+          loading: false,
+        });
+      }
+    });
   }
 
   async signOut() {
@@ -39,21 +39,47 @@ export default class Header extends Component {
   }
 
   render() {
+    const isLoggedIn = this.state.authenticated;
+    let userControls;
+
+    if (isLoggedIn) {
+        userControls = (
+        <li>
+          <button onClick={this.signOut}>Signout</button>
+        </li>
+      );
+    } else {
+        userControls = (
+        <li>
+          <Link className="button is-primary is-small" to="/login">Login</Link>
+        </li>
+      );
+    }
+
     return (
-        <div>
-            {this.state.authenticated
-                ?  <button onClick={ this.signOut}>Signout</button>
-                : <span>
-                    <Link className="btn btn-primary px-5 mr-3" to="/signup">
-                        Create New Account
-                    </Link>
-                    <br></br>
-                    <Link className="btn px-5" to="/login">
-                        Login
-                    </Link>
-                </span>
-            }
-        </div>
+      <div class="tabs">
+        <ul>
+          <li class="is-active">
+            <a>Home</a>
+          </li>
+          <li>
+            <Link to="/ideas">Ideas</Link>
+          </li>
+          <li>
+            <a>Apply</a>
+          </li>
+          <li>
+            <a>Call for speakers</a>
+          </li>
+          <li>
+            <a>Speakers & Jury </a>
+          </li>
+          <li>
+            <a href="https://www.femaletechleaders.org/what-we-do">About FTL</a>
+          </li>
+          {userControls}
+        </ul>
+      </div>
     );
   }
 }
