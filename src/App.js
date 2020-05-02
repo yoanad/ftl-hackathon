@@ -11,7 +11,7 @@ import Home from './pages/Home';
 // import Chat from './pages/Chat';
 import SignUp from './pages/SignUp.js';
 import Login from './pages/Login';
-import Idea from './pages/Idea';
+import Idea from './pages/Ideas';
 import { auth } from './services/firebase';
 
 function PrivateRoute({ component: Component, authenticated, ...rest }) {
@@ -31,12 +31,12 @@ function PublicRoute({ component: Component, authenticated, ...rest }) {
       {...rest}
       render={(props) => authenticated === false
         ? <Component {...props} />
-        : <Redirect to='/MyIdea' />}
+        : <Redirect to='/ideas' />}
     />
   )
 }
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -66,7 +66,7 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <PrivateRoute path="/idea" authenticated={this.state.authenticated} component={Idea}></PrivateRoute>
+          <PrivateRoute path="/ideas" authenticated={this.state.authenticated} component={Idea}></PrivateRoute>
           <PublicRoute path="/signup" authenticated={this.state.authenticated} component={SignUp}></PublicRoute>
           <PublicRoute path="/login" authenticated={this.state.authenticated} component={Login}></PublicRoute>
         </Switch>
@@ -74,5 +74,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
