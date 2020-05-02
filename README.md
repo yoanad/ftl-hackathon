@@ -10,6 +10,9 @@ Followed this tutorial: https://css-tricks.com/building-a-real-time-chat-app-wit
 `npm start`
 
 # Deployment :fire:
+1. `npm run build`
+2. `firebase login`
+3. `firebase deploy`
 
 # Styling
 For the sake of speedy development, I used Bulma for styling the elements. Please refer to their documentation when styling elements (but you actually shouldn't have to!): https://bulma.io/documentation/. 
