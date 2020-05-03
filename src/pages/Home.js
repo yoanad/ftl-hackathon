@@ -15,7 +15,7 @@ export default class HomePage extends Component {
     return (
       <div>
         <Header />
-        <section className="home">
+        <section className="Home">
           <div className="container">
             <h1 className="title is-1 welcome-title">
               Welcome to <br/>FTL's first online hackathon!

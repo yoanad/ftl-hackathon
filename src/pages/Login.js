@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { signin, signInWithGoogle, signInWithGitHub } from "../helpers/auth";
+import Header from "../components/Header";
+import "./Login.scss";
 
 export default class Login extends Component {
   constructor() {
@@ -50,68 +52,84 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="container">
-        <form
-          className="mt-5 py-5 px-5"
-          autoComplete="off"
-          onSubmit={this.handleSubmit}>
-          <h1>
-            Login to
-            <Link className="title ml-2" to="/">
-              FTL Hackathon
-            </Link>
-          </h1>
-          <p className="lead">
-            Fill in the form below to login to your account.
-          </p>
-          <div className="form-group">
-            <input
-              className="form-control"
-              placeholder="Email"
-              name="email"
-              type="email"
-              onChange={this.handleChange}
-              value={this.state.email}
-            />
+      <div className="Login">
+        <Header />
+        <section>
+          <div className="container">
+            <form autoComplete="off" onSubmit={this.handleSubmit}>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    onChange={this.handleChange}
+                    value={this.state.email}
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="password"
+                    placeholder="Password"
+                    onChange={this.handleChange}
+                    value={this.state.password}
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-primary">Submit</button>
+                </div>
+              </div>
+              {this.state.error ? (
+                <p class="help is-danger">{this.state.error}</p>
+              ) : null}
+            </form>
+            <br />
+            <div class="field alternative-login">
+              <p>You can also log in with any of these services:</p>
+              <button
+                className="button is-google"
+                type="button"
+                onClick={this.googleSignIn}
+              >
+                <span class="icon">
+                  <i class="fab fa-google"></i>
+                </span>
+                <span>Sign in with Google</span>
+              </button>
+              <button
+                className="button is-github"
+                type="button"
+                onClick={this.githubSignIn}
+              >
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Sign in with GitHub</span>
+              </button>
+            </div>
+            <hr />
+            <p>
+              Don't have an account? <Link to="/signup">Sign up</Link>
+            </p>
           </div>
-          <div className="form-group">
-            <input
-              className="form-control"
-              placeholder="Password"
-              name="password"
-              onChange={this.handleChange}
-              value={this.state.password}
-              type="password"
-            />
-          </div>
-          <div className="form-group">
-            {this.state.error ? (
-              <p className="text-danger">{this.state.error}</p>
-            ) : null}
-            <button className="btn btn-primary px-5" type="submit">
-              Login
-            </button>
-          </div>
-          <p>You can also log in with any of these services</p>
-          <button
-            className="btn btn-danger mr-2"
-            type="button"
-            onClick={this.googleSignIn}
-          >
-            Sign in with Google
-          </button>
-          <button
-            className="btn btn-secondary"
-            type="button"
-            onClick={this.githubSignIn}
-          >
-            Sign in with GitHub
-          </button>
-          <hr />
-          <p>
-            Don't have an account? <Link to="/signup">Sign up</Link>
-          </p>
-        </form>
+        </section>
       </div>
     );
   }

@@ -10,7 +10,7 @@ $yellow: #fff55d;
 $pink: #fb41b9;
 $pink-light: #fad1ef;
 $beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
+$beige-lighter: #fcfcfc;
 
 // // Update Bulma's global variables
 // $family-sans-serif: 'Nunito', sans-serif;
@@ -31,13 +31,15 @@ $custom-colors: (
 );
 
 // Update some of Bulma's component variables
-// $body-background-color: $beige-lighter;
+$body-background-color: $beige-lighter;
 // $control-border-width: 2px;
 // $input-border-color: transparent;
 // $input-shadow: none;
 
 // Import only what you need from Bulma
 @import '../node_modules/bulma/';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../node_modules/bulma-social/bin/bulma-social.min.css';
 // @import '../node_modules/bulma/sass/base/_all.sass';
 // @import '../node_modules/bulma/sass/elements/button.sass';
 // @import '../node_modules/bulma/sass/elements/container.sass';
