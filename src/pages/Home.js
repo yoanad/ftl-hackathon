@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer"
 import teaserImg from "../images/teaser.png";
 import "./Home.scss";
 
@@ -122,21 +123,7 @@ export default class HomePage extends Component {
             </div>
           </div>
         </section>
-        <footer class="footer">
-          <div class="content has-text-centered">
-            <p>
-              <strong>
-                Introduction to Big Data {"\u2022"} COVID-19 and its Global
-                Effects
-              </strong>{" "}
-              by{" "}
-              <a href="https://www.femaletechleaders.org/team">
-                FTL Hackathons Team
-              </a>
-              .
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     );
   }
