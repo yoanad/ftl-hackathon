@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import SignUp from './pages/SignUp.js';
 import Login from './pages/Login';
 import Idea from './pages/Ideas';
+import Speakers from "./pages/Speakers";
 import { auth } from './services/firebase';
 
 function PrivateRoute({ component: Component, authenticated, ...rest }) {
@@ -69,6 +70,7 @@ export default class App extends Component {
           <PrivateRoute path="/ideas" authenticated={this.state.authenticated} component={Idea}></PrivateRoute>
           <PublicRoute path="/signup" authenticated={this.state.authenticated} component={SignUp}></PublicRoute>
           <PublicRoute path="/login" authenticated={this.state.authenticated} component={Login}></PublicRoute>
+          <PublicRoute path="/speakers" authenticated={this.state.authenticated} component={Speakers}></PublicRoute>
         </Switch>
       </Router>
     );

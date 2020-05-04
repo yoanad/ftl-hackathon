@@ -72,7 +72,7 @@ export default class Header extends Component {
             <a>Call for speakers</a>
           </li>
           <li>
-            <a>Speakers & Jury </a>
+            <Link to="/speakers">Speakers</Link>
           </li>
           <li>
             <a href="https://www.femaletechleaders.org/what-we-do">About FTL</a>
