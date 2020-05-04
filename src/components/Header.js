@@ -69,9 +69,6 @@ export default class Header extends Component {
             <a>Apply</a>
           </li>
           <li>
-            <a>Call for speakers</a>
-          </li>
-          <li>
             <Link to="/speakers">Speakers</Link>
           </li>
           <li>
