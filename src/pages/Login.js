@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { signin, signInWithGoogle, signInWithGitHub } from "../helpers/auth";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "./Login.scss";
 
 export default class Login extends Component {
@@ -130,6 +131,7 @@ export default class Login extends Component {
             </p>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
