@@ -56,12 +56,6 @@ export default class HomePage extends Component {
                 >
                   Register as a participant
                 </a>
-                <a
-                  className="button is-outlined is-secondary"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeyQuo5D3YgYvpS4HQqLgDNguGRRA_94ZKchA5FEqiBEczMdw/viewform"
-                >
-                  Apply to be a speaker
-                </a>
               </div>
             </div>
             <div className="teaser-image">
