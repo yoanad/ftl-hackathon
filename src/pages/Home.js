@@ -4,7 +4,9 @@ import Footer from "../components/Footer";
 import Speakers from "./Speakers";
 import Ideas from "./Ideas";
 import Jury from "./Jury";
+import Prizes from "./Prizes";
 import teaserImg from "../images/teaser.png";
+import invensityImg from "../images/invensity.png";
 import "./Home.scss";
 
 export default class HomePage extends Component {
@@ -171,6 +173,27 @@ export default class HomePage extends Component {
     );
   }
 
+  partner() {
+    return (
+      <section class="section">
+        <div className="container">
+          <h3 className="title is-3">Partner</h3>
+          <div className="content">
+            <p>
+              Thank you{" "}
+              <a href="https://www.invensity.com/?lang=en">Invensity</a> for
+              your amazing cooperation!
+            </p>
+            <strong>##### Something about Invensity #####</strong>
+          </div>
+          <div>
+            <img src={invensityImg} />
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   render() {
     return (
       <div>
@@ -191,6 +214,10 @@ export default class HomePage extends Component {
           <div id={"jury"}>
             <Jury />
           </div>
+          <div id={"prizes"}>
+            <Prizes />
+          </div>
+          <div id={"partner"}>{this.partner()}</div>
           {this.authenticated ? (
             <div id={"ideas"}>
               <Ideas />
