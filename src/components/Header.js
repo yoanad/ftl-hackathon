@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { auth } from "../services/firebase";
 import { Link } from "react-router-dom";
 import { signOut } from "../helpers/auth";
+import { HashLink } from "react-router-hash-link";
 
 export default class Header extends Component {
   constructor(props) {
@@ -43,40 +44,60 @@ export default class Header extends Component {
     let userControls;
 
     if (isLoggedIn) {
-        userControls = (
-        <li>
-          <button onClick={this.signOut}>Signout</button>
-        </li>
+      userControls = (
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button className="button is-primary" onClick={this.signOut}>
+              Signout
+            </button>
+          </div>
+        </div>
       );
     } else {
-        userControls = (
-        <li>
-          <Link className="button is-primary is-small" to="/login">Login</Link>
-        </li>
+      userControls = (
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <Link className="button is-primary" to="/signup">
+                Sign up
+              </Link>
+              <Link className="button is-light" to="/login">
+                Login
+              </Link>
+            </div>
+          </div>
+        </div>
       );
     }
 
     return (
-      <div class="tabs">
-        <ul>
-          <li class="is-active">
-            <a>Home</a>
-          </li>
-          <li>
-            <Link to="/ideas">Ideas</Link>
-          </li>
-          <li>
-            <a>Apply</a>
-          </li>
-          <li>
-            <Link to="/speakers">Speakers</Link>
-          </li>
-          <li>
-            <a href="https://www.femaletechleaders.org/what-we-do">About FTL</a>
-          </li>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <HashLink class="navbar-item" to="/#initiative" smooth={true}>
+              Initiative
+            </HashLink>
+            <HashLink class="navbar-item" to="/#tracks" smooth={true}>
+              Tracks
+            </HashLink>
+            <HashLink class="navbar-item" to="/#speakers" smooth={true}>
+              Speakers
+            </HashLink>
+            <HashLink class="navbar-item" to="/#agenda" smooth={true}>
+              Agenda
+            </HashLink>
+            <HashLink class="navbar-item" to="/#jury" smooth={true}>
+              Jury
+            </HashLink>
+            {isLoggedIn ? (
+              <HashLink class="navbar-item" to="/ideas" smooth={true}>
+                Ideas
+              </HashLink>
+            ) : null}
+          </div>
           {userControls}
-        </ul>
-      </div>
+        </div>
+      </nav>
     );
   }
 }

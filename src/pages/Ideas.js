@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { auth } from "../services/firebase";
 import { db } from "../services/firebase";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default class Idea extends Component {
   constructor(props) {
@@ -12,7 +14,6 @@ export default class Idea extends Component {
       readError: null,
       writeError: null,
     };
-
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -56,24 +57,31 @@ export default class Idea extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Ideas</h1>
-        <div className="ideas">
-          {this.state.ideas.map((idea) => {
-            return <p key={idea.timestamp}>Idea creator: {idea.creator}</p>;
-          })}
-        </div>
-        <h1>Submit new idea</h1>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            onChange={this.handleChange}
-            value={this.state.content}></input>
-          {this.state.error ? <p>{this.state.writeError}</p> : null}
-          <button type="submit">Send</button>
-        </form>
-        <div>
-          Logged in as: <strong>{this.state.user.email}</strong>
-        </div>
+      <div class="content">
+        <Header />
+        <section class="section">
+          <div class="container">
+            <h3 className="title is-3">Ideas</h3>
+            <div className="ideas">
+              {this.state.ideas.map((idea) => {
+                return <p key={idea.timestamp}>Idea creator: {idea.creator}</p>;
+              })}
+            </div>
+            <h1>Submit new idea</h1>
+            <form onSubmit={this.handleSubmit}>
+              <input
+                onChange={this.handleChange}
+                value={this.state.content}
+              ></input>
+              {this.state.error ? <p>{this.state.writeError}</p> : null}
+              <button type="submit">Send</button>
+            </form>
+            <div>
+              Logged in as: <strong>{this.state.user.email}</strong>
+            </div>
+          </div>
+        </section>
+        <Footer />
       </div>
     );
   }

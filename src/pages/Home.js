@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
+import Speakers from "./Speakers";
+import Ideas from "./Ideas";
+import Jury from "./Jury";
 import teaserImg from "../images/teaser.png";
 import "./Home.scss";
 
@@ -9,6 +12,163 @@ export default class HomePage extends Component {
     super(props);
 
     this.authenticated = this.props.authenticated;
+  }
+
+  initiative() {
+    return (
+      <div className="container teaser">
+        <div className="teaser-text">
+          <h3 className="title is-3">
+            Introduction to Big Data - COVID-19 and its Global Effects
+          </h3>
+          <div class="content">
+            <p>
+              Since the beginning of this year, COVID-19 has made its way around
+              the world, severely impacting healthcare, the economy and our
+              climate. It has directly affected everyone’s lives, as we either
+              stay at home or work essential jobs, and watch in real-time as
+              scientists and politicians gain a better understanding of the
+              virus.
+            </p>
+            <p>
+              While living in a globalized world has certainly accelerated the
+              spread and reach of COVID-19, it has also allowed for a
+              collaborative effort among countries for research and reporting.
+              To this end, the amount of free, open-source data that has been
+              made available to the public provides us with a unique opportunity
+              to understand and gain insights to this pandemic.
+            </p>
+            <p>
+              <a href="https://www.femaletechleaders.org/">
+                Female Tech Leaders{" "}
+              </a>
+              therefore is proud to invite you to participate in our first ever
+              virtual Hackathon. We will introduce people of all genders and
+              professions to COVID-19 and other related datasets, and make sense
+              of it!
+            </p>
+            <a
+              className="button is-primary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform"
+            >
+              Register as a participant
+            </a>
+          </div>
+        </div>
+        <div className="teaser-image">
+          <img src={teaserImg} alt="A lady writing code" />
+        </div>
+      </div>
+    );
+  }
+
+  tracks() {
+    return (
+      <section>
+        <div className="container">
+          <h3 className="title is-3">Tracks</h3>
+          <div className="content">
+            <ol type="1">
+              <li className="title is-4">
+                The Economy, Finance: Create a stock market analysis using Yahoo
+                Finance data
+              </li>
+
+              <div class="content">
+                The economy has taken a severe hit in the past couple of months,
+                both nationally and internationally. In order to understand how
+                the stock market has been affected, we want to conduct an
+                analysis of{" "}
+                <a href="https://finance.yahoo.com/quote/CSV/history/">
+                  Yahoo’s Finance data
+                </a>
+                . Through the presentation of the available data and some Python
+                tools in the form of a YouTube live stream Workshop, we invite
+                hackers to delve into the Finance track, and to analyze this
+                data.
+              </div>
+
+              <li className="title is-4">
+                Individuals and the Media: Analyze COVID-19 Tweets in Real-time
+              </li>
+              <div class="content">
+                Since Twitter’s inception, it has been a leading social platform
+                for individuals and institutions to announce anecdotes,
+                important news updates, and everything in-between to their
+                followers and to the world. In this challenge, we invite hackers
+                to use the Twitter API to fetch real-time data and create data
+                visualizations and reports. A Workshop demonstrating how to
+                fetch data from{" "}
+                <a href="https://developer.twitter.com/en/docs/labs/covid19-stream/overview">
+                  Twitter’s real-time API{" "}
+                </a>
+                will aid participants in their collection of data by a topic
+                they are interested in.
+              </div>
+              <li className="title is-4">Open</li>
+              <div class="content">
+                Is there data that you have access to that you would like to
+                hack away at yourself? Feel free! We can’t wait to see what your
+                group comes up with!
+              </div>
+            </ol>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  agenda() {
+    return (
+      <section>
+        <div className="container">
+          <h3 className="title is-3">Agenda</h3>
+          <div className="content">
+            <article class="message is-primary">
+              <div class="message-header">
+                <p>Friday</p>
+              </div>
+              <div class="message-body">
+                <p>19:00 - 20:00 - Introduction: YouTube Livestream</p>
+                <p>
+                  23:55 - Deadline to submit team name and members, and chosen
+                  track
+                </p>
+              </div>
+            </article>
+
+            <article class="message is-dark">
+              <div class="message-header">
+                <p>Saturday</p>
+              </div>
+              <div class="message-body">
+                <p>
+                  10:00 - 10:30 - Welcome to Official Day 1: YouTube LiveStream
+                </p>
+                <p>10:30 - 11:30 - Workshop #1: Yahoo Finance dataset</p>
+                <p>11:30 - 12:30 - Workshop #2: Twitter Stream API</p>
+                <p>14:00 - 15:00 - Speaker #1</p>
+                <p>17:00 - 18:00 - Mid-session presentation</p>
+                <p>18:00 - 18:45 - Yoga session</p>
+              </div>
+            </article>
+
+            <article class="message is-primary">
+              <div class="message-header">
+                <p>Sunday</p>
+              </div>
+              <div class="message-body">
+                <p>11:00 - Submission</p>
+                <p>11:15 - 12:15 - Speaker #2 + Judging</p>
+                <p>12:15 - 13:15 - Speaker #3 + Final pitch</p>
+                <p>14:00 - 15:00 - Present winners and top groups</p>
+                <p>Wrap-up! Thank you!</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    );
   }
 
   render() {
@@ -22,100 +182,20 @@ export default class HomePage extends Component {
               FTL's first online hackathon!
             </h1>
           </div>
-          <div className="container teaser">
-            <div className="teaser-text">
-              <h2 className="title is-2">Initiative</h2>
-              <div class="content">
-                <p>
-                  Since the beginning of this year, COVID-19 has made its way
-                  around the world, severely impacting healthcare, the economy
-                  and our climate. It has directly affected everyone’s lives, as
-                  we either stay at home or work essential jobs, and watch in
-                  real-time as scientists and politicians gain a better
-                  understanding of the virus.
-                </p>
-                <p>
-                  While living in a globalized world has certainly accelerated
-                  the spread and reach of COVID-19, it has also allowed for a
-                  collaborative effort among countries for research and
-                  reporting. To this end, the amount of free, open-source data
-                  that has been made available to the public provides us with a
-                  unique opportunity to understand and gain insights to this
-                  pandemic.
-                </p>
-                <p>
-                  <a href="https://www.femaletechleaders.org/">
-                    Female Tech Leaders{" "}
-                  </a>
-                  therefore is proud to invite you to participate in our first
-                  ever virtual Hackathon. We will introduce people of all
-                  genders and professions to COVID-19 and other related
-                  datasets, and make sense of it!
-                </p>
-                <a
-                  className="button is-primary"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform"
-                >
-                  Register as a participant
-                </a>
-              </div>
-            </div>
-            <div className="teaser-image">
-              <img src={teaserImg} alt="A lady writing code" />
-            </div>
+          <div id={"initiative"}>{this.initiative()}</div>
+          <div id={"tracks"}>{this.tracks()}</div>
+          <div id={"speakers"}>
+            <Speakers />
           </div>
-        </section>
-        <section>
-          <div className="container">
-            <h3 className="title is-3">Tracks</h3>
-            <div className="content">
-              <ol type="1">
-                <li className="title is-4">
-                  The Economy, Finance: Create a stock market analysis using
-                  Yahoo Finance data
-                </li>
-
-                <div class="content">
-                  The economy has taken a severe hit in the past couple of
-                  months, both nationally and internationally. In order to
-                  understand how the stock market has been affected, we want to
-                  conduct an analysis of{" "}
-                  <a href="https://finance.yahoo.com/quote/CSV/history/">
-                    Yahoo’s Finance data
-                  </a>
-                  . Through the presentation of the available data and some
-                  Python tools in the form of a YouTube live stream Workshop, we
-                  invite hackers to delve into the Finance track, and to analyze
-                  this data.
-                </div>
-
-                <li className="title is-4">
-                  Individuals and the Media: Analyze COVID-19 Tweets in
-                  Real-time
-                </li>
-                <div class="content">
-                  Since Twitter’s inception, it has been a leading social
-                  platform for individuals and institutions to announce
-                  anecdotes, important news updates, and everything in-between
-                  to their followers and to the world. In this challenge, we
-                  invite hackers to use the Twitter API to fetch real-time data
-                  and create data visualizations and reports. A Workshop
-                  demonstrating how to fetch data from{" "}
-                  <a href="https://developer.twitter.com/en/docs/labs/covid19-stream/overview">
-                    Twitter’s real-time API{" "}
-                  </a>
-                  will aid participants in their collection of data by a topic
-                  they are interested in.
-                </div>
-                <li className="title is-4">Open</li>
-                <div class="content">
-                  Is there data that you have access to that you would like to
-                  hack away at yourself? Feel free! We can’t wait to see what
-                  your group comes up with!
-                </div>
-              </ol>
-            </div>
+          <div id={"agenda"}>{this.agenda()}</div>
+          <div id={"jury"}>
+            <Jury />
           </div>
+          {this.authenticated ? (
+            <div id={"ideas"}>
+              <Ideas />
+            </div>
+          ) : null}
         </section>
         <Footer />
       </div>
