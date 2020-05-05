@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Speakers from "./Speakers";
 import Ideas from "./Ideas";
+import Yoga from "./Yoga";
 import Jury from "./Jury";
 import Prizes from "./Prizes";
 import teaserImg from "../images/teaser.png";
@@ -54,6 +55,12 @@ export default class HomePage extends Component {
               href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform"
             >
               Register as a participant
+            </a>
+            <a
+              className="button is-dark"
+              href="https://discord.gg/FUZvGp"
+            >
+              Join the discussion on Discord
             </a>
           </div>
         </div>
@@ -128,7 +135,7 @@ export default class HomePage extends Component {
           <div className="content">
             <article class="message is-primary">
               <div class="message-header">
-                <p>Friday</p>
+                <p>Friday May 22, 2020</p>
               </div>
               <div class="message-body">
                 <p>19:00 - 20:00 - Introduction: YouTube Livestream</p>
@@ -141,7 +148,7 @@ export default class HomePage extends Component {
 
             <article class="message is-dark">
               <div class="message-header">
-                <p>Saturday</p>
+                <p>Saturday May 23, 2020</p>
               </div>
               <div class="message-body">
                 <p>
@@ -157,7 +164,7 @@ export default class HomePage extends Component {
 
             <article class="message is-primary">
               <div class="message-header">
-                <p>Sunday</p>
+                <p>Sunday May 24, 2020</p>
               </div>
               <div class="message-body">
                 <p>11:00 - Submission</p>
@@ -211,6 +218,9 @@ export default class HomePage extends Component {
             <Speakers />
           </div>
           <div id={"agenda"}>{this.agenda()}</div>
+          <div id={"yoga"}>
+            <Yoga />
+          </div>
           <div id={"jury"}>
             <Jury />
           </div>

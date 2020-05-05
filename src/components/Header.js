@@ -86,6 +86,9 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#agenda" smooth={true}>
               Agenda
             </HashLink>
+            <HashLink class="navbar-item" to="/#yoga" smooth={true}>
+              Yoga
+            </HashLink>
             <HashLink class="navbar-item" to="/#jury" smooth={true}>
               Jury
             </HashLink>
