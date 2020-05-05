@@ -14,7 +14,8 @@ export default class Jury extends Component {
             name="FTL Hackathons Team"
             talkTitle="Judges"
             image={teaserImg}
-            linkedIn={"https://www.linkedin.com/company/female-tech-leaders/"}
+            linkedIn={true}
+            link={"https://www.linkedin.com/company/female-tech-leaders/"}
           />
         </section>
       </div>

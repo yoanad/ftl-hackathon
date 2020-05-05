@@ -15,7 +15,8 @@ export default class Yoga extends Component {
             talkTitle="Yoga Trainer"
             image={asalImg}
             timeSlot="Saturday May 23 @ 18:00-18:45 CET"
-            linkedIn={"https://www.instagram.com/asal_az/"}
+            linkedIn={false}
+            link={"https://www.instagram.com/asal_az/"}
           />
         </section>
       </div>

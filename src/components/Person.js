@@ -18,7 +18,7 @@ export default class Person extends Component {
               </div>
               <div>{this.props.timeSlot}</div>
               <div>
-                <a href={this.props.linkedIn}>LinkedIn</a>
+                <a href={this.props.link}>{this.props.linkedIn ? "LinkedIn" : "Instagram"}</a>
               </div>
             </div>
           </div>

@@ -13,7 +13,8 @@ export default class Prizes extends Component {
           talkTitle="Training day with Invensity and your Team"
           image={teaserImg}
           timeSlot="Date/Time: TBD"
-          linkedIn={"https://www.linkedin.com/company/invensity/"}
+          linkedIn={true}
+          link={"https://www.linkedin.com/company/invensity/"}
         />
         </section>
       </div>
