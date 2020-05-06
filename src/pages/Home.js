@@ -73,7 +73,7 @@ export default class HomePage extends Component {
 
   tracks() {
     return (
-      <section class="section">
+      <section className="section">
         <div className="container">
           <h3 className="title is-3">Tracks</h3>
           <div className="content">
@@ -83,7 +83,7 @@ export default class HomePage extends Component {
                 Finance data
               </li>
 
-              <div class="content">
+              <div className="content">
                 The economy has taken a severe hit in the past couple of months,
                 both nationally and internationally. In order to understand how
                 the stock market has been affected, we want to conduct an
@@ -100,7 +100,7 @@ export default class HomePage extends Component {
               <li className="title is-4">
                 Individuals and the Media: Analyze COVID-19 Tweets in Real-time
               </li>
-              <div class="content">
+              <div className="content">
                 Since Twitter’s inception, it has been a leading social platform
                 for individuals and institutions to announce anecdotes,
                 important news updates, and everything in-between to their
@@ -115,7 +115,7 @@ export default class HomePage extends Component {
                 they are interested in.
               </div>
               <li className="title is-4">Open</li>
-              <div class="content">
+              <div className="content">
                 Is there data that you have access to that you would like to
                 hack away at yourself? Feel free! We can’t wait to see what your
                 group comes up with!
@@ -133,11 +133,11 @@ export default class HomePage extends Component {
         <div className="container">
           <h3 className="title is-3">Agenda</h3>
           <div className="content">
-            <article class="message is-primary">
-              <div class="message-header">
+            <article className="message is-primary">
+              <div className="message-header">
                 <p>Friday May 22, 2020</p>
               </div>
-              <div class="message-body">
+              <div className="message-body">
                 <p>19:00 - 20:00 - Introduction: YouTube Livestream</p>
                 <p>
                   23:55 - Deadline to submit team name and members, and chosen
@@ -146,11 +146,11 @@ export default class HomePage extends Component {
               </div>
             </article>
 
-            <article class="message is-dark">
-              <div class="message-header">
+            <article className="message is-dark">
+              <div className="message-header">
                 <p>Saturday May 23, 2020</p>
               </div>
-              <div class="message-body">
+              <div className="message-body">
                 <p>
                   10:00 - 10:30 - Welcome to Official Day 1: YouTube LiveStream
                 </p>
@@ -162,11 +162,11 @@ export default class HomePage extends Component {
               </div>
             </article>
 
-            <article class="message is-primary">
-              <div class="message-header">
+            <article className="message is-primary">
+              <div className="message-header">
                 <p>Sunday May 24, 2020</p>
               </div>
-              <div class="message-body">
+              <div className="message-body">
                 <p>11:00 - Submission</p>
                 <p>11:15 - 12:15 - Speaker #2 + Judging</p>
                 <p>12:15 - 13:15 - Speaker #3 + Final pitch</p>

@@ -3,12 +3,14 @@ import { auth } from "../services/firebase";
 import { Link } from "react-router-dom";
 import { signOut } from "../helpers/auth";
 import { HashLink } from "react-router-hash-link";
+import logo from "../images/ftllogo.png";
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
 
     this.signOut = this.signOut.bind(this);
+    this.handleBurgerClick = this.handleBurgerClick.bind(this);
 
     this.state = {
       authenticated: false,
@@ -39,42 +41,33 @@ export default class Header extends Component {
     }
   }
 
+  handleBurgerClick(event) {
+    event.target.classList.toggle('is-active');
+    document.querySelector('.navbar-menu').classList.toggle('is-active');
+  }
+
   render() {
-    const isLoggedIn = this.state.authenticated;
-    let userControls;
-
-    if (isLoggedIn) {
-      userControls = (
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <button className="button is-primary" onClick={this.signOut}>
-              Signout
-            </button>
-          </div>
-        </div>
-      );
-    } else {
-      userControls = (
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a
-              className="button is-primary"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform">
-              Register as a participant
-              </a>
-              <a target="_blank" rel="noopener noreferrer" className="button" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
-                Submit idea
-              </a>
-            </div>
-          </div>
-        </div>
-      );
-    }
-
     return (
+      
       <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-menu">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img src={logo} alt="FTL logo" height="50"/>
+            </a>
+
+            <a role="button"
+                class="navbar-burger burger"
+                onClick={this.handleBurgerClick}
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+        <div id="navbar-menu" onClick={this.handleBurgerClick} class="navbar-menu">
           <div class="navbar-start">
             <HashLink class="navbar-item" to="/#initiative" smooth={true}>
               Initiative
@@ -104,7 +97,20 @@ export default class Header extends Component {
               Ideas
             </a>
           </div>
-          {userControls}
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a
+                className="button is-primary"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform">
+                Register as a participant
+                </a>
+                <a target="_blank" rel="noopener noreferrer" className="button" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
+                  Submit idea
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     );
