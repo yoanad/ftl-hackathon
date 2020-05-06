@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Person from "../components/Person";
+import Person from "./Person";
 import teaserImg from "../images/teaser.png";
 
 export default class Jury extends Component {

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Speakers from "./Speakers";
+import Speakers from "../components/Speakers";
 import Ideas from "./Ideas";
-import Yoga from "./Yoga";
-import Jury from "./Jury";
-import Prizes from "./Prizes";
+import Yoga from "../components/Yoga";
+import Jury from "../components/Jury";
+import Prizes from "../components/Prizes";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
 import "./Home.scss";

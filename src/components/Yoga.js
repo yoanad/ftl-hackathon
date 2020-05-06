@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Person from "../components/Person";
+import Person from "./Person";
 import asalImg from "../images/asalYoga.jpg";
 
 export default class Yoga extends Component {

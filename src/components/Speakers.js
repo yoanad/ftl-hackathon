@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Person from "../components/Person";
+import Person from "./Person";
 import norbertImg from "../images/norbert.jpeg";
 import deepaImg from "../images/deepa.jpeg";
 import janImg from "../images/jan.jpeg";
