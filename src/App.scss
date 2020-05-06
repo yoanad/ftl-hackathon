@@ -37,14 +37,17 @@ $body-background-color: $beige-lighter;
 // $input-shadow: none;
 
 // Import only what you need from Bulma
-@import '~bulma/';
-@import "~bulma/sass/utilities/mixins";
-// @import '../node_modulesbulma/sass/utilities/mixins';
-// @import '../node_modules/bulma/sass/utilities/mixins.sass';
-// @import '../node_modules/bulma/sass/elements/button.sass';
-// @import '../node_modules/bulma/sass/elements/container.sass';
-// @import '../node_modules/bulma/sass/elements/form.sass';
-// @import '../node_modules/bulma/sass/elements/title.sass';
-// @import '../node_modules/bulma/sass/components/navbar.sass';
-// @import '../node_modules/bulma/sass/layout/hero.sass';
-// @import '../node_modules/bulma/sass/layout/section.sass';
+@import "../node_modules/bulma/";
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../node_modules/bulma/sass/base/_all.sass";
+// @import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/elements/container.sass";
+// @import "../node_modules/bulma/sass/elements/title.sass";
+// @import "../node_modules/bulma/sass/form/_all.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+// @import "../node_modules/bulma/sass/layout/hero.sass";
+// @import "../node_modules/bulma/sass/layout/section.sass";
+
+
+//Components
+@import "./pages/Home.scss";

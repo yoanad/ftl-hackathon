@@ -7,7 +7,6 @@ import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
-import "./Home.scss";
 
 export default class HomePage extends Component {
 
