@@ -58,12 +58,14 @@ export default class Header extends Component {
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <Link className="button is-primary" to="/signup">
-                Sign up
-              </Link>
-              <Link className="button is-light" to="/login">
-                Login
-              </Link>
+              <a
+              className="button is-primary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform">
+              Register as a participant
+              </a>
+              <a target="_blank" rel="noopener noreferrer" className="button" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
+                Submit idea
+              </a>
             </div>
           </div>
         </div>
@@ -98,11 +100,9 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#partner" smooth={true}>
               Partner
             </HashLink>
-            {isLoggedIn ? (
-              <HashLink class="navbar-item" to="/ideas" smooth={true}>
-                Ideas
-              </HashLink>
-            ) : null}
+            <a target="_blank" rel="noopener noreferrer" class="navbar-item" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
+              Ideas
+            </a>
           </div>
           {userControls}
         </div>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Speakers from "../components/Speakers";
-import Ideas from "./Ideas";
 import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
@@ -11,11 +10,6 @@ import invensityImg from "../images/invensity.png";
 import "./Home.scss";
 
 export default class HomePage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.authenticated = this.props.authenticated;
-  }
 
   initiative() {
     return (
@@ -194,7 +188,7 @@ export default class HomePage extends Component {
             <strong>##### Something about Invensity #####</strong>
           </div>
           <div>
-            <img src={invensityImg} />
+            <img src={invensityImg} alt="Invensity logo" />
           </div>
         </div>
       </section>
@@ -228,11 +222,6 @@ export default class HomePage extends Component {
             <Prizes />
           </div>
           <div id={"partner"}>{this.partner()}</div>
-          {this.authenticated ? (
-            <div id={"ideas"}>
-              <Ideas />
-            </div>
-          ) : null}
         </section>
         <Footer />
       </div>
