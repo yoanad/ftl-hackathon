@@ -19,8 +19,8 @@ export default class HomePage extends Component {
 
   initiative() {
     return (
-      <div className="container teaser">
-        <div className="teaser-text">
+      <div className="container teaser level reverse-columns">
+        <div className="section column teaser-text">
           <h3 className="title is-3">
             Introduction to Big Data - COVID-19 and its Global Effects
           </h3>
@@ -64,7 +64,7 @@ export default class HomePage extends Component {
             </a>
           </div>
         </div>
-        <div className="teaser-image">
+        <div className="column teaser-image">
           <img src={teaserImg} alt="A lady writing code" />
         </div>
       </div>
@@ -73,7 +73,7 @@ export default class HomePage extends Component {
 
   tracks() {
     return (
-      <section>
+      <section class="section">
         <div className="container">
           <h3 className="title is-3">Tracks</h3>
           <div className="content">
@@ -129,7 +129,7 @@ export default class HomePage extends Component {
 
   agenda() {
     return (
-      <section>
+      <section class="section">
         <div className="container">
           <h3 className="title is-3">Agenda</h3>
           <div className="content">
@@ -206,7 +206,7 @@ export default class HomePage extends Component {
       <div>
         <Header />
         <section className="Home">
-          <div className="container">
+          <div className="container welcome-container">
             <h1 className="title is-1 welcome-title">
               Welcome to <br />
               FTL's first online hackathon!

@@ -1,27 +1,35 @@
+
 $yellow: #fff55d;
 $pink: #fb41b9;
+@import '~bulma/';
+@import "~bulma/sass/utilities/mixins";
 
 .Home {
+
+  .welcome-container {
+    padding-top: 3rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+  }
   .welcome-title {
     background-image: linear-gradient($yellow, $yellow);
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-size: 100% 2px;
     transition: background-size .5s, background-position .3s ease-in .5s;
-    width: 50%;
     font-weight: bold;
+    margin-bottom: 10px;
 
     &:hover {
       transition: background-position .5s, background-size .3s ease-in .5s;
       background-size: 100% 100%;
       background-position: 0% 0%;
     }
-  }
 
-  .container.teaser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include from($tablet) {
+      width: 50%;
+    }  
   }
 
   .teaser-text {
@@ -35,4 +43,11 @@ $pink: #fb41b9;
   .button {
     margin: 15px 15px 0px 0px;
   }
+
+  @include until($tablet) {
+    .reverse-columns {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }  
 }

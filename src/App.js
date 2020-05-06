@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bulma-social/bin/bulma-social.min.css';
 
