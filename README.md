@@ -11,7 +11,7 @@ Followed this tutorial: https://css-tricks.com/building-a-real-time-chat-app-wit
 
 # Deployment :fire:
 1. `npm run build`
-2. `firebase login`
+2. `firebase login` (if you are doing it for the first time)
 3. `firebase deploy`
 
 # Styling
