@@ -228,11 +228,6 @@ export default class HomePage extends Component {
             <Prizes />
           </div>
           <div id={"partner"}>{this.partner()}</div>
-          {this.authenticated ? (
-            <div id={"ideas"}>
-              <Ideas />
-            </div>
-          ) : null}
         </section>
         <Footer />
       </div>

@@ -11,7 +11,7 @@ export default class Footer extends Component {
               Effects
             </strong>{" "}
             by{" "}
-            <a href="https://www.femaletechleaders.org/team">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.femaletechleaders.org/team">
               FTL Hackathons Team
             </a>
             .
