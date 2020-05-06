@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.scss';
-
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bulma-social/bin/bulma-social.min.css';
 
 import {
   Route,
   BrowserRouter as Router,
-  Switch,
-  Redirect,
+  Switch
 } from "react-router-dom";
 
 import Home from './pages/Home';
@@ -19,9 +17,7 @@ function PublicRoute({ component: Component, authenticated, ...rest }) {
   return (
     <Route
       {...rest}
-      render={(props) => authenticated === false
-        ? <Component {...props} />
-        : <Redirect to='/ideas' />}
+      render={(props) => <Component {...props} />}
     />
   )
 }
