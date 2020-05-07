@@ -13,7 +13,7 @@ export default class Jury extends Component {
           </div>
           <Person
             name="Deepa Gautam-Nigge"
-            talkTitle="Deepa is heading the SAP Next-Gen Innovation Network in Munich. SAP Next-Gen is a vibrant community for “innovation with purpose” related to the UN Global Goals of sustainability. She is committed to driving future innovation with SAP’s strategic and most innovative customers, high class Universities and their Entrepreneurship Centers, as well as top-notch Start Ups and successful Venture Firms. With more than 19 years of experience in the software industry, Deepa is also deputy chair of the Connected Mobility focus group in the German Digital Economy Association (BVDW) and represents the interests of SAP as a founding partner of Digital Hub Mobility in Munich."
+            bio="Deepa is heading the SAP Next-Gen Innovation Network in Munich. SAP Next-Gen is a vibrant community for “innovation with purpose” related to the UN Global Goals of sustainability. She is committed to driving future innovation with SAP’s strategic and most innovative customers, high class Universities and their Entrepreneurship Centers, as well as top-notch Start Ups and successful Venture Firms. With more than 19 years of experience in the software industry, Deepa is also deputy chair of the Connected Mobility focus group in the German Digital Economy Association (BVDW) and represents the interests of SAP as a founding partner of Digital Hub Mobility in Munich."
             image={deepaImg}
             linkedIn={true}
             link={"https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"}

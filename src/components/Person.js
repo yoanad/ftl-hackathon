@@ -18,6 +18,9 @@ export default class Person extends Component {
               </div>
               <div>{this.props.timeSlot}</div>
               <div>
+              </div>
+              <div>{this.props.bio}</div>
+              <div>
                 <a href={this.props.link}>{this.props.linkedIn ? "LinkedIn" : "Instagram"}</a>
               </div>
             </div>
