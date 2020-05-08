@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Person from "./Person";
-import teaserImg from "../images/teaser.png";
 import deepaImg from "../images/deepa.jpg";
-import ftlLogoImg from "../images/ftllogo.png";
+import ftlLogoImg from "../images/official_logo.png";
 
 export default class Jury extends Component {
   deepaBio() {

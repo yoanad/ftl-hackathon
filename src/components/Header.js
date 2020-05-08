@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { auth } from "../services/firebase";
-import { Link } from "react-router-dom";
 import { signOut } from "../helpers/auth";
 import { HashLink } from "react-router-hash-link";
 import logo from "../images/ftllogo.png";
@@ -97,7 +96,7 @@ export default class Header extends Component {
               Resources
             </HashLink>
             <HashLink class="navbar-item" to="/#partner" smooth={true}>
-              Partner
+              Partners
             </HashLink>
             <a target="_blank" rel="noopener noreferrer" class="navbar-item" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
               Ideas

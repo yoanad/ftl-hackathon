@@ -10,6 +10,7 @@ import Prizes from "../components/Prizes";
 import Resources from "../components/Resources";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
+import sapImg from "../images/sap.png";
 
 export default class HomePage extends Component {
   initiative() {
@@ -194,25 +195,33 @@ export default class HomePage extends Component {
     return (
       <section class="section">
         <div className="container">
-          <h3 className="title is-3">Partner</h3>
+          <h3 className="title is-3">Partners</h3>
           <div className="content">
-            <p>
-              Thank you{" "}
-              <a href="https://www.invensity.com/?lang=en">Invensity</a> for
-              your cooperation!
-            </p>
-            <p>
-            INVENSITY is an international technology and innovation consulting
-            company with offices in Germany, USA, Philippines and Spain.
-            INVENSITY uses its Academy and Technology Hub to provide an ongoing
-            outstanding level of service to renowned companies in several
-            industries like automotive, defense, aerospace, health care, and
-            energy. INVENSITY´s core specialties are Systems and Software
-            Engineering, Data Systems, Cyber Security, Analytics & Sensorics,
-            Artificial Intelligence, and more.</p>
+            {/* Removing for now, possibly forever */}
+            {/* <p>
+              <a href="https://www.invensity.com/?lang=en">INVENSITY</a> is an
+              international technology and innovation consulting company with
+              offices in Germany, USA, Philippines and Spain. INVENSITY uses its
+              Academy and Technology Hub to provide an ongoing outstanding level
+              of service to renowned companies in several industries like
+              automotive, defense, aerospace, health care, and energy.
+              INVENSITY´s core specialties are Systems and Software Engineering,
+              Data Systems, Cyber Security, Analytics & Sensorics, Artificial
+              Intelligence, and more.
+            </p> */}
           </div>
-          <div>
-            <img src={invensityImg} alt="Invensity logo" />
+          {/* ADD VERTICAL ALIGN */}
+          <div class="columns" style={{ textAlign: "center" }}>
+            <div class="column">
+              <a href="https://www.invensity.com/?lang=en">
+                <img src={invensityImg} alt="Invensity logo" />
+              </a>
+            </div>
+            <div class="column">
+              <a href="https://www.sap.com/">
+                <img src={sapImg} style={{ width: "30%" }} alt="Sap logo" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
