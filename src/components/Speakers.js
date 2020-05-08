@@ -13,15 +13,15 @@ export default class Speakers extends Component {
           name="Norbert Distler"
           talkTitle="Strength Orientation"
           image={norbertImg}
-          timeSlot="Saturday May 23 @ 14:00-15:00 CET"
+          timeSlot="Saturday May 23 @ 14:00-15:00 CEST"
           linkedIn={true}
           link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
-        />
+            />
         <Person
           name="Jan Binczyk"
           talkTitle="??"
           image={janImg}
-          timeSlot="Sunday May 24 @ 12:15-13:15 CET"
+          timeSlot="Sunday May 24 @ 12:15-13:15 CEST"
           linkedIn={true}
           link={"https://www.linkedin.com/in/jan-binczyk/"}
         />
