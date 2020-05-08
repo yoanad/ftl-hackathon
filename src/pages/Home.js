@@ -51,7 +51,7 @@ export default class HomePage extends Component {
             </a>
             <a
               className="button is-dark"
-              href="https://discord.gg/FUZvGp"
+              href="https://discord.gg/SceNNxY"
             >
               Join the discussion on Discord
             </a>
