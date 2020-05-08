@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faInstagram, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 export default class Person extends Component {
   render() {
     return (
@@ -43,13 +43,16 @@ export default class Person extends Component {
                 {this.props.bio}
                 {this.props.link ? (
                   <div>
-                    <a href={this.props.link}>
-                    {this.props.linkedIn ? (
-                      <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
-                    ) : (
-                      <FontAwesomeIcon icon={faInstagram} size={"2x"} />
-                    )}
-                    </a>
+                      <a href={this.props.link}>
+                        {this.props.linkedIn ? (
+                            <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
+                        ) : (
+                            <FontAwesomeIcon icon={faInstagram} size={"2x"} />
+                        )}
+                      </a>
+                      &nbsp;
+                      <a href={this.props.link}> <FontAwesomeIcon icon={faTwitterSquare} size={"2x"}/>
+                      </a>
                   </div>
                 ) : null}
               </div>

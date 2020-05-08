@@ -37,6 +37,8 @@ export default class Jury extends Component {
             image={deepaImg}
             linkedIn={true}
             link={"https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"}
+            twitter = {true}
+            link={"https://twitter.com/DGN_MUC"}
           />
           <br/><br/>
           <Person
@@ -45,6 +47,8 @@ export default class Jury extends Component {
             image={ftlLogoImg}
             linkedIn={true}
             link={"https://www.linkedin.com/company/female-tech-leaders/"}
+            twitter = {true}
+            link={"https://twitter.com/FTL_Munich"}
           />
         </section>
       </div>

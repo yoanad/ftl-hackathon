@@ -27,6 +27,8 @@ export default class Yoga extends Component {
             bio={this.asalBio()}
             linkedIn={false}
             link={"https://www.instagram.com/asal_az/"}
+            twitter = {true}
+            link={"https://twitter.com/binczykjan"}
           />
         </section>
       </div>

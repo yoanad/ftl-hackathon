@@ -53,6 +53,8 @@ export default class Speakers extends Component {
             bio={this.norbertBio()}
             linkedIn={true}
             link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
+            twitter = {true}
+            link={"https://twitter.com/norbertdistler"}
           />
           <Person
             boldText="Katrin Scharpf"
@@ -61,6 +63,8 @@ export default class Speakers extends Component {
             bio={this.katrinBio()}
             linkedIn={true}
             link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
+            twitter = {true}
+            link={"https://twitter.com/norbertdistler"}
           />
           <Person
             boldText="Jan Bińczyk"
@@ -69,6 +73,8 @@ export default class Speakers extends Component {
             bio={this.janBio()}
             linkedIn={true}
             link={"https://www.linkedin.com/in/jan-binczyk/"}
+            twitter = {true}
+            link={"https://twitter.com/binczykjan"}
           />
         </section>
       </div>
