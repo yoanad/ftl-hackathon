@@ -5,11 +5,11 @@ import Speakers from "../components/Speakers";
 import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
+import Resources from "../components/Resources";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
 
 export default class HomePage extends Component {
-
   initiative() {
     return (
       <div className="container teaser level reverse-columns">
@@ -71,11 +71,10 @@ export default class HomePage extends Component {
           <h3 className="title is-3">Tracks</h3>
           <div className="content">
             <ol type="1">
-              <li className="title is-4">
+              <li id={"track1"} className="title is-4">
                 The Economy, Finance: Create a stock market analysis using Yahoo
                 Finance data
               </li>
-
               <div className="content">
                 The economy has taken a severe hit in the past couple of months,
                 both nationally and internationally. In order to understand how
@@ -90,7 +89,7 @@ export default class HomePage extends Component {
                 data.
               </div>
 
-              <li className="title is-4">
+              <li id={"track2"} className="title is-4">
                 Individuals and the Media: Analyze COVID-19 Tweets in Real-time
               </li>
               <div className="content">
@@ -120,12 +119,31 @@ export default class HomePage extends Component {
     );
   }
 
+  timezoneWarning() {
+    return (
+      <div class="box">
+        <h3 style={{ textAlign: "center" }}>
+          <span class="tag is-warning is-large">Attention!</span>
+        </h3>
+        <p style={{ textAlign: "center" }}>
+          Female Tech Leaders is an organization based in{" "}
+          <strong>Munich, Germany</strong>, therefore all times below are in{" "}
+          <a href="https://www.timeanddate.com/time/zones/cest">
+            Central European Summer Time
+          </a>
+          .
+        </p>
+      </div>
+    );
+  }
+
   agenda() {
     return (
       <section class="section">
         <div className="container">
           <h3 className="title is-3">Agenda</h3>
           <div className="content">
+            {this.timezoneWarning()}
             <article className="message is-primary">
               <div className="message-header">
                 <p>Friday May 22, 2020</p>
@@ -219,6 +237,9 @@ export default class HomePage extends Component {
           </div>
           <div id={"prizes"}>
             <Prizes />
+          </div>
+          <div id={"resources"}>
+            <Resources />
           </div>
           <div id={"partner"}>{this.partner()}</div>
         </section>

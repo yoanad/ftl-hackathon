@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Person from "./Person";
 import norbertImg from "../images/norbert.jpeg";
-import deepaImg from "../images/deepa.jpeg";
 import janImg from "../images/jan.jpeg";
 
 export default class Speakers extends Component {
@@ -18,14 +17,6 @@ export default class Speakers extends Component {
           linkedIn={true}
           link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
             />
-        <Person
-          name="Deepa Gautam-Nigge"
-          talkTitle="??"
-          image={deepaImg}
-          timeSlot="Sunday May 24 @ 11:15-12:15 CEST"
-          linkedIn={true}
-          link={"https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"}
-        />
         <Person
           name="Jan Binczyk"
           talkTitle="??"
