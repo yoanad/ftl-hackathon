@@ -7,6 +7,7 @@ import Agenda from "../components/Agenda";
 import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
+import Resources from "../components/Resources";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
 
@@ -69,11 +70,10 @@ export default class HomePage extends Component {
           <h3 className="title is-3">Tracks</h3>
           <div className="content">
             <ol type="1">
-              <li className="title is-4">
+              <li id={"track1"} className="title is-4">
                 The Economy, Finance: Create a stock market analysis using Yahoo
                 Finance data
               </li>
-
               <div className="content">
                 The economy has taken a severe hit in the past couple of months,
                 both nationally and internationally. In order to understand how
@@ -88,7 +88,7 @@ export default class HomePage extends Component {
                 data.
               </div>
 
-              <li className="title is-4">
+              <li id={"track2"} className="title is-4">
                 Individuals and the Media: Analyze COVID-19 Tweets in Real-time
               </li>
               <div className="content">
@@ -112,6 +112,78 @@ export default class HomePage extends Component {
                 group comes up with!
               </div>
             </ol>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  timezoneWarning() {
+    return (
+      <div class="box">
+        <h3 style={{ textAlign: "center" }}>
+          <span class="tag is-warning is-large">Attention!</span>
+        </h3>
+        <p style={{ textAlign: "center" }}>
+          Female Tech Leaders is an organization based in{" "}
+          <strong>Munich, Germany</strong>, therefore all times below are in{" "}
+          <a href="https://www.timeanddate.com/time/zones/cest">
+            Central European Summer Time
+          </a>
+          .
+        </p>
+      </div>
+    );
+  }
+
+  agenda() {
+    return (
+      <section class="section">
+        <div className="container">
+          <h3 className="title is-3">Agenda</h3>
+          <div className="content">
+            {this.timezoneWarning()}
+            <article className="message is-primary">
+              <div className="message-header">
+                <p>Friday May 22, 2020</p>
+              </div>
+              <div className="message-body">
+                <p>19:00 - 20:00 - Introduction: YouTube Livestream</p>
+                <p>
+                  23:55 - Deadline to submit team name and members, and chosen
+                  track
+                </p>
+              </div>
+            </article>
+
+            <article className="message is-dark">
+              <div className="message-header">
+                <p>Saturday May 23, 2020</p>
+              </div>
+              <div className="message-body">
+                <p>
+                  10:00 - 10:30 - Welcome to Official Day 1: YouTube LiveStream
+                </p>
+                <p>10:30 - 11:30 - Workshop #1: Yahoo Finance dataset</p>
+                <p>11:30 - 12:30 - Workshop #2: Twitter Stream API</p>
+                <p>14:00 - 15:00 - Speaker #1</p>
+                <p>17:00 - 18:00 - Mid-session presentation</p>
+                <p>18:00 - 18:45 - Yoga session</p>
+              </div>
+            </article>
+
+            <article className="message is-primary">
+              <div className="message-header">
+                <p>Sunday May 24, 2020</p>
+              </div>
+              <div className="message-body">
+                <p>11:00 - Submission</p>
+                <p>11:15 - 12:15 - Speaker #2 + Judging</p>
+                <p>12:15 - 13:15 - Speaker #3 + Final pitch</p>
+                <p>14:00 - 15:00 - Present winners and top groups</p>
+                <p>Wrap-up! Thank you!</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -177,6 +249,9 @@ export default class HomePage extends Component {
           </div>
           <div id={"prizes"}>
             <Prizes />
+          </div>
+          <div id={"resources"}>
+            <Resources />
           </div>
           <div id={"partner"}>{this.partner()}</div>
         </section>
