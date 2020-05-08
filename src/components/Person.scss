@@ -10,3 +10,9 @@
     position: relative;
     margin-Right: -30px;
 }
+
+.media {
+    @include until($tablet) {
+        flex-direction: column;
+    }  
+}
