@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Speakers from "../components/Speakers";
+import Workshops from "../components/Workshops";
+import Agenda from "../components/Agenda";
 import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
 import Resources from "../components/Resources";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
+import sapImg from "../images/sap.png";
 
 export default class HomePage extends Component {
   initiative() {
@@ -49,10 +52,7 @@ export default class HomePage extends Component {
             >
               Register as a participant
             </a>
-            <a
-              className="button is-dark"
-              href="https://discord.gg/FUZvGp"
-            >
+            <a className="button is-dark" href="https://discord.gg/SceNNxY">
               Join the discussion on Discord
             </a>
           </div>
@@ -100,7 +100,7 @@ export default class HomePage extends Component {
                 to use the Twitter API to fetch real-time data and create data
                 visualizations and reports. A Workshop demonstrating how to
                 fetch data from{" "}
-                <a href="https://developer.twitter.com/en/docs/labs/covid19-stream/overview">
+                <a href="https://developer.twitter.com/en/docs/labs/filtered-stream/quick-start">
                   Twitter’s real-time API{" "}
                 </a>
                 will aid participants in their collection of data by a topic
@@ -195,17 +195,33 @@ export default class HomePage extends Component {
     return (
       <section class="section">
         <div className="container">
-          <h3 className="title is-3">Partner</h3>
+          <h3 className="title is-3">Partners</h3>
           <div className="content">
-            <p>
-              Thank you{" "}
-              <a href="https://www.invensity.com/?lang=en">Invensity</a> for
-              your amazing cooperation!
-            </p>
-            <strong>##### Something about Invensity #####</strong>
+            {/* Removing for now, possibly forever */}
+            {/* <p>
+              <a href="https://www.invensity.com/?lang=en">INVENSITY</a> is an
+              international technology and innovation consulting company with
+              offices in Germany, USA, Philippines and Spain. INVENSITY uses its
+              Academy and Technology Hub to provide an ongoing outstanding level
+              of service to renowned companies in several industries like
+              automotive, defense, aerospace, health care, and energy.
+              INVENSITY´s core specialties are Systems and Software Engineering,
+              Data Systems, Cyber Security, Analytics & Sensorics, Artificial
+              Intelligence, and more.
+            </p> */}
           </div>
-          <div>
-            <img src={invensityImg} alt="Invensity logo" />
+          {/* ADD VERTICAL ALIGN */}
+          <div class="columns" style={{ textAlign: "center" }}>
+            <div class="column">
+              <a href="https://www.invensity.com/?lang=en">
+                <img src={invensityImg} alt="Invensity logo" />
+              </a>
+            </div>
+            <div class="column">
+              <a href="https://www.sap.com/">
+                <img src={sapImg} style={{ width: "30%" }} alt="Sap logo" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -225,10 +241,15 @@ export default class HomePage extends Component {
           </div>
           <div id={"initiative"}>{this.initiative()}</div>
           <div id={"tracks"}>{this.tracks()}</div>
+          <div id={"agenda"}>
+            <Agenda />
+          </div>
+          <div id={"workshops"}>
+            <Workshops />
+          </div>
           <div id={"speakers"}>
             <Speakers />
           </div>
-          <div id={"agenda"}>{this.agenda()}</div>
           <div id={"yoga"}>
             <Yoga />
           </div>

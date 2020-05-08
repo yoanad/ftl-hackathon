@@ -1,8 +1,18 @@
 import React, { Component } from "react";
 import Person from "./Person";
-import asalImg from "../images/asalYoga.jpg";
+import asalImg from "../images/asal.jpg";
 
 export default class Yoga extends Component {
+  asalBio() {
+    return (
+      <div>
+        Asal is a yoga teacher in Toronto. She has always been passionate about
+        anything relating to health and wellness. Her mission is to help others
+        make positive changes in their lives and most importantly feel good with
+        the practice of yoga.
+      </div>
+    );
+  }
   render() {
     return (
       <div class="content">
@@ -11,10 +21,10 @@ export default class Yoga extends Component {
             <h3 className="title is-3">Yoga Trainer</h3>
           </div>
           <Person
-            name="Asal"
-            talkTitle="Yoga Trainer"
+            boldText="Asal Azghadi"
             image={asalImg}
-            timeSlot="Saturday May 23 @ 18:00-18:45 CEST"
+            smallText="Saturday May 23, 18:00-18:45 CEST"
+            bio={this.asalBio()}
             linkedIn={false}
             link={"https://www.instagram.com/asal_az/"}
           />

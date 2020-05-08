@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Person from "./Person";
-import teaserImg from "../images/teaser.png";
 import deepaImg from "../images/deepa.jpg";
-import ftlLogoImg from "../images/ftllogo.png";
+import ftlLogoImg from "../images/official_logo.png";
 
 export default class Jury extends Component {
   deepaBio() {
@@ -33,7 +32,7 @@ export default class Jury extends Component {
             <h3 className="title is-3">Jury</h3>
           </div>
           <Person
-            talkTitle="Deepa Gautam-Nigge"
+            boldText="Deepa Gautam-Nigge"
             bio={this.deepaBio()}
             image={deepaImg}
             linkedIn={true}
@@ -41,7 +40,7 @@ export default class Jury extends Component {
           />
           <br/><br/>
           <Person
-            talkTitle="FTL Hackathons Team"
+            boldText="FTL Hackathons Team"
             bio={"Members from the team will also be involved in the judging!"}
             image={ftlLogoImg}
             linkedIn={true}
