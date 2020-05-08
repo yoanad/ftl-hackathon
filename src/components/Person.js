@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 export default class Person extends Component {
   render() {
     return (
@@ -36,6 +37,8 @@ export default class Person extends Component {
               <div class="content is-small">{this.props.smallText}</div>
               <div class="container">
                 {this.props.bio}
+              <div>
+             <a href={this.props.link}>{this.props.linkedIn ? <FontAwesomeIcon icon={faLinkedin} size={"2x"}/> : <FontAwesomeIcon icon={faInstagram} size={"2x"}/>}</a>
               </div>
               {this.props.link ? (
                 <div>
