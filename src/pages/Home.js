@@ -119,12 +119,31 @@ export default class HomePage extends Component {
     );
   }
 
+  timezoneWarning() {
+    return (
+      <div class="box">
+        <h3 style={{ textAlign: "center" }}>
+          <span class="tag is-warning is-large">Attention!</span>
+        </h3>
+        <p style={{ textAlign: "center" }}>
+          Female Tech Leaders is an organization based in{" "}
+          <strong>Munich, Germany</strong>, therefore all times below are in{" "}
+          <a href="https://www.timeanddate.com/time/zones/cest">
+            Central European Summer Time
+          </a>
+          .
+        </p>
+      </div>
+    );
+  }
+
   agenda() {
     return (
       <section class="section">
         <div className="container">
           <h3 className="title is-3">Agenda</h3>
           <div className="content">
+            {this.timezoneWarning()}
             <article className="message is-primary">
               <div className="message-header">
                 <p>Friday May 22, 2020</p>
