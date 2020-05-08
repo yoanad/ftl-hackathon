@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import {faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
-
+import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 export default class Person extends Component {
   render() {
     return (
@@ -23,7 +20,6 @@ export default class Person extends Component {
               <div>{this.props.timeSlot}</div>
               <div>
                 <a href={this.props.link}>{this.props.linkedIn ? <FontAwesomeIcon icon={faLinkedin} size={"2x"}/> : <FontAwesomeIcon icon={faInstagram} size={"2x"}/>}</a>
-                {/*<a href={this.props.link}>{this.props.linkedIn ? <FontAwesomeIcon icon={faTwitterSquare} size={"2x"}/> : <FontAwesomeIcon icon={faInstagram} size={"2x"}/>}</a>*/}
               </div>
             </div>
           </div>
