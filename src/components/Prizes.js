@@ -10,9 +10,9 @@ export default class Prizes extends Component {
         <div class="container"><h3 className="title is-3">Prizes</h3></div>
         <Person
           name="First Prize"
-          talkTitle="Training day with Invensity and your Team"
+          boldText="Training day with Invensity and your Team"
           image={teaserImg}
-          timeSlot="Date/Time: TBD"
+          smallText="Date/Time: TBD"
           linkedIn={true}
           link={"https://www.linkedin.com/company/invensity/"}
         />

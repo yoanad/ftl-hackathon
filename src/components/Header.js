@@ -75,11 +75,14 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#tracks" smooth={true}>
               Tracks
             </HashLink>
-            <HashLink class="navbar-item" to="/#speakers" smooth={true}>
-              Speakers
-            </HashLink>
             <HashLink class="navbar-item" to="/#agenda" smooth={true}>
               Agenda
+            </HashLink>
+            <HashLink class="navbar-item" to="/#workshops" smooth={true}>
+              Workshops
+            </HashLink>
+            <HashLink class="navbar-item" to="/#speakers" smooth={true}>
+              Speakers
             </HashLink>
             <HashLink class="navbar-item" to="/#yoga" smooth={true}>
               Yoga

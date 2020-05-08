@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Speakers from "../components/Speakers";
+import Workshops from "../components/Workshops";
+import Agenda from "../components/Agenda";
 import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
@@ -9,7 +11,6 @@ import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
 
 export default class HomePage extends Component {
-
   initiative() {
     return (
       <div className="container teaser level reverse-columns">
@@ -49,10 +50,7 @@ export default class HomePage extends Component {
             >
               Register as a participant
             </a>
-            <a
-              className="button is-dark"
-              href="https://discord.gg/SceNNxY"
-            >
+            <a className="button is-dark" href="https://discord.gg/SceNNxY">
               Join the discussion on Discord
             </a>
           </div>
@@ -101,7 +99,7 @@ export default class HomePage extends Component {
                 to use the Twitter API to fetch real-time data and create data
                 visualizations and reports. A Workshop demonstrating how to
                 fetch data from{" "}
-                <a href="https://developer.twitter.com/en/docs/labs/covid19-stream/overview">
+                <a href="https://developer.twitter.com/en/docs/labs/filtered-stream/quick-start">
                   Twitter’s real-time API{" "}
                 </a>
                 will aid participants in their collection of data by a topic
@@ -120,59 +118,6 @@ export default class HomePage extends Component {
     );
   }
 
-  agenda() {
-    return (
-      <section class="section">
-        <div className="container">
-          <h3 className="title is-3">Agenda</h3>
-          <div className="content">
-            <article className="message is-primary">
-              <div className="message-header">
-                <p>Friday May 22, 2020</p>
-              </div>
-              <div className="message-body">
-                <p>19:00 - 20:00 - Introduction: YouTube Livestream</p>
-                <p>
-                  23:55 - Deadline to submit team name and members, and chosen
-                  track
-                </p>
-              </div>
-            </article>
-
-            <article className="message is-dark">
-              <div className="message-header">
-                <p>Saturday May 23, 2020</p>
-              </div>
-              <div className="message-body">
-                <p>
-                  10:00 - 10:30 - Welcome to Official Day 1: YouTube LiveStream
-                </p>
-                <p>10:30 - 11:30 - Workshop #1: Yahoo Finance dataset</p>
-                <p>11:30 - 12:30 - Workshop #2: Twitter Stream API</p>
-                <p>14:00 - 15:00 - Speaker #1</p>
-                <p>17:00 - 18:00 - Mid-session presentation</p>
-                <p>18:00 - 18:45 - Yoga session</p>
-              </div>
-            </article>
-
-            <article className="message is-primary">
-              <div className="message-header">
-                <p>Sunday May 24, 2020</p>
-              </div>
-              <div className="message-body">
-                <p>11:00 - Submission</p>
-                <p>11:15 - 12:15 - Speaker #2 + Judging</p>
-                <p>12:15 - 13:15 - Speaker #3 + Final pitch</p>
-                <p>14:00 - 15:00 - Present winners and top groups</p>
-                <p>Wrap-up! Thank you!</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   partner() {
     return (
       <section class="section">
@@ -182,9 +127,17 @@ export default class HomePage extends Component {
             <p>
               Thank you{" "}
               <a href="https://www.invensity.com/?lang=en">Invensity</a> for
-              your amazing cooperation!
+              your cooperation!
             </p>
-            <strong>##### Something about Invensity #####</strong>
+            <p>
+            INVENSITY is an international technology and innovation consulting
+            company with offices in Germany, USA, Philippines and Spain.
+            INVENSITY uses its Academy and Technology Hub to provide an ongoing
+            outstanding level of service to renowned companies in several
+            industries like automotive, defense, aerospace, health care, and
+            energy. INVENSITY´s core specialties are Systems and Software
+            Engineering, Data Systems, Cyber Security, Analytics & Sensorics,
+            Artificial Intelligence, and more.</p>
           </div>
           <div>
             <img src={invensityImg} alt="Invensity logo" />
@@ -207,10 +160,15 @@ export default class HomePage extends Component {
           </div>
           <div id={"initiative"}>{this.initiative()}</div>
           <div id={"tracks"}>{this.tracks()}</div>
+          <div id={"agenda"}>
+            <Agenda />
+          </div>
+          <div id={"workshops"}>
+            <Workshops />
+          </div>
           <div id={"speakers"}>
             <Speakers />
           </div>
-          <div id={"agenda"}>{this.agenda()}</div>
           <div id={"yoga"}>
             <Yoga />
           </div>

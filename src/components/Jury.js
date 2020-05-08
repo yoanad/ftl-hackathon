@@ -12,7 +12,7 @@ export default class Jury extends Component {
           </div>
           <Person
             name="FTL Hackathons Team"
-            talkTitle="Judges"
+            boldText="Judges"
             image={teaserImg}
             linkedIn={true}
             link={"https://www.linkedin.com/company/female-tech-leaders/"}
