@@ -64,7 +64,7 @@ export default class Speakers extends Component {
             linkedIn={true}
             link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
             twitter = {true}
-            link={"https://twitter.com/norbertdistler"}
+            link={"https://twitter.com/"}
           />
           <Person
             boldText="Jan Bińczyk"

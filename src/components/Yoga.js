@@ -28,7 +28,7 @@ export default class Yoga extends Component {
             linkedIn={false}
             link={"https://www.instagram.com/asal_az/"}
             twitter = {true}
-            link={"https://twitter.com/binczykjan"}
+            link={"https://twitter.com/"}
           />
         </section>
       </div>
