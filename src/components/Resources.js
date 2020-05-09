@@ -66,7 +66,7 @@ export default class Resources extends Component {
             To participate, you are <strong>required to have a</strong>{" "}
             <a href="https://twitter.com/explore">Twitter</a> account. Please
             share it with the organizers on{" "}
-            <a href="https://discord.gg/4qcgs4">
+            <a href="https://discord.gg/SceNNxY">
               the hackathon's Discord server
             </a>{" "}
             so that we can add you to the{" "}
