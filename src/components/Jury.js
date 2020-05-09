@@ -35,20 +35,16 @@ export default class Jury extends Component {
             boldText="Deepa Gautam-Nigge"
             bio={this.deepaBio()}
             image={deepaImg}
-            linkedIn={true}
-            link={"https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"}
-            twitter = {true}
-            link={"https://twitter.com/DGN_MUC"}
+            linkedIn={"https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"}
+            twitter={"https://twitter.com/DGN_MUC"}
           />
           <br/><br/>
           <Person
             boldText="FTL Hackathons Team"
             bio={"Members from the team will also be involved in the judging!"}
             image={ftlLogoImg}
-            linkedIn={true}
-            link={"https://www.linkedin.com/company/female-tech-leaders/"}
-            twitter = {true}
-            link={"https://twitter.com/FTL_Munich"}
+            linkedIn={"https://www.linkedin.com/company/female-tech-leaders/"}
+            twitter={"https://twitter.com/FTL_Munich"}
           />
         </section>
       </div>

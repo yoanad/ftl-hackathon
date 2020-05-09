@@ -51,30 +51,23 @@ export default class Speakers extends Component {
             image={norbertImg}
             smallText="Coach, Psychologist, Facilitator and big yoga fan for more than 15 years"
             bio={this.norbertBio()}
-            linkedIn={true}
-            link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
-            twitter = {true}
-            link={"https://twitter.com/norbertdistler"}
+            linkedIn={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
+            twitter={"https://twitter.com/norbertdistler"}
           />
           <Person
             boldText="Katrin Scharpf"
             image={katrinImg}
             smallText="Coach and Facilitator"
             bio={this.katrinBio()}
-            linkedIn={true}
-            link={"https://www.linkedin.com/in/norbert-distler-47900b5/"}
-            twitter = {true}
-            link={"https://twitter.com/"}
+            linkedIn={"https://www.linkedin.com/in/katrin-scharpf-174971196/"}
           />
           <Person
             boldText="Jan Bińczyk"
             image={janImg}
             smallText="Lead UX Designer, Inveox"
             bio={this.janBio()}
-            linkedIn={true}
-            link={"https://www.linkedin.com/in/jan-binczyk/"}
-            twitter = {true}
-            link={"https://twitter.com/binczykjan"}
+            linkedIn={"https://www.linkedin.com/in/jan-binczyk/"}
+            twitter={"https://twitter.com/binczykjan"}
           />
         </section>
       </div>

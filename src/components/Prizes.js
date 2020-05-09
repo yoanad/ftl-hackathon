@@ -6,7 +6,14 @@ export default class Prizes extends Component {
   invensityLink() {
     return (
       <div>
-        Training day with <a href="https://www.invensity.com/" style={{ color: "black", textDecoration: "underline" }}>INVENSITY GmbH</a> and your Team
+        Training with{" "}
+        <a
+          href="https://www.invensity.com/"
+          style={{ color: "black", textDecoration: "underline" }}
+        >
+          INVENSITY GmbH
+        </a>{" "}
+        and your Team
       </div>
     );
   }
@@ -22,8 +29,6 @@ export default class Prizes extends Component {
             boldText={this.invensityLink()}
             image={teaserImg}
             smallText="Date/Time: TBD"
-            linkedIn={true}
-            link={"https://www.linkedin.com/company/invensity/"}
           />
         </section>
       </div>

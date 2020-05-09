@@ -25,10 +25,7 @@ export default class Yoga extends Component {
             image={asalImg}
             smallText="Saturday May 23, 18:00-18:45 CEST"
             bio={this.asalBio()}
-            linkedIn={false}
-            link={"https://www.instagram.com/asal_az/"}
-            twitter = {true}
-            link={"https://twitter.com/"}
+            instagram={"https://www.instagram.com/asal_az/"}
           />
         </section>
       </div>
