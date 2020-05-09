@@ -81,7 +81,7 @@ export default class Team extends Component {
                             <Person
                                 boldText="Yoanna"
                                 image={yoannaImg}
-                                smallText="Student"
+                                smallText="Student, Media Informatics"
                                 email={"yoanna@femaletechleaders.org"}
                                 linkedIn={"https://www.linkedin.com/in/yoanna-borisova/"}
                             />

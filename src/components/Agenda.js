@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { HashLink } from "react-router-hash-link";
 
-const diamondSymbol = ` \u25C6 `
-const actionDiamondSymbol = ` \u25C8 `
+const diamondSymbol = ` \u25C6 `;
+const actionDiamondSymbol = ` \u25C8 `;
 
 export default class Agenda extends Component {
   friday() {
