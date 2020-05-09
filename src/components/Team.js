@@ -9,40 +9,6 @@ import yoanaImg from "../images/yoana.jpg";
 import yoannaImg from "../images/yoanna.jpeg";
 
 export default class Team extends Component {
-    norbertBio() {
-        return (
-            <div>
-                I support people on their journey to face their fears and bring their potential and strengths into the world.
-            </div>
-        )
-    }
-    katrinBio() {
-        return (
-            <div>
-                I help to unleash potential of people and organizations. My focus is on
-                personal development topics like communication, conflict and leadership.
-                I’m a mother of 2 kids and well connected to earth.
-            </div>
-        );
-    }
-    janBio() {
-        return (
-            <div>
-                Jan has over 12 years of professional experience in the field of product
-                design as a UX Designer and UX Manager. He transforms the experience
-                delivered to users by positioning UX design as an integral aspect of
-                strategic product planning. As a Lead UX Designer at Inveox, he designs
-                for the healthcare industry by creating more personalized experiences
-                for patients. Jan has graduated from the SWPS University of Social
-                Sciences and Humanities with a Master's Degree in Social Psychology of
-                the Internet and Communication. He has launched and now coordinates the
-                User Experience & Business Design postgraduate studies at the Tischner
-                European University in Kraków. Apart from that, Jan is also a guest
-                lecturer at the UX Design and Internet Analysis studies at the Białystok
-                University of Technology.
-            </div>
-        );
-    }
     render() {
         return (
             <div class="content">

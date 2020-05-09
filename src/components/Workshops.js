@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Person from "./Person";
 import workshopImg from "../images/workshop1.png";
-// import katrinImg from "../images/katrin.png";
 import uxImg from "../images/ux_design.png";
 
 export default class Workshops extends Component {
@@ -36,7 +35,6 @@ export default class Workshops extends Component {
               name="Norbert Distler and Katrin Scharpf"
               boldText="Empower yourself - unlock your potential"
               image={workshopImg}
-              // image2={katrinImg}
               smallText={"Saturday May 23, 14:00-15:00 CEST"}
               bio={this.norbertKatrinTalkDesc()}
             />
