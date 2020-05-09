@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Person from "./Person";
-import norbertImg from "../images/norbert.jpg";
-import katrinImg from "../images/katrin.png";
-import janImg from "../images/jan.jpg";
+import workshopImg from "../images/workshop1.png";
+// import katrinImg from "../images/katrin.png";
+import uxImg from "../images/ux_design.png";
 
 export default class Workshops extends Component {
   norbertKatrinTalkDesc() {
@@ -35,8 +35,8 @@ export default class Workshops extends Component {
             <Person
               name="Norbert Distler and Katrin Scharpf"
               boldText="Empower yourself - unlock your potential"
-              image={norbertImg}
-              image2={katrinImg}
+              image={workshopImg}
+              // image2={katrinImg}
               smallText={"Saturday May 23, 14:00-15:00 CEST"}
               bio={this.norbertKatrinTalkDesc()}
             />
@@ -45,7 +45,7 @@ export default class Workshops extends Component {
             <Person
               name="Jan Binczyk"
               boldText="How to blend observations and data for better User Experience"
-              image={janImg}
+              image={uxImg}
               smallText="Sunday May 24, 12:15-13:15 CEST"
               bio={this.janDesc()}
             />

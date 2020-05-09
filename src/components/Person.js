@@ -5,6 +5,7 @@ import {
   faInstagram,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 export default class Person extends Component {
   render() {
     return (
@@ -46,6 +47,11 @@ export default class Person extends Component {
               <div class="container">
                 {this.props.bio}
                   <div>
+                    {this.props.email ? (
+                        <a href={this.props.email}>
+                          <FontAwesomeIcon icon={faEnvelopeSquare} size={"2x"} />{" "}
+                        </a>
+                    ) : null}
                     {this.props.linkedIn ? (
                       <a href={this.props.linkedIn}>
                         <FontAwesomeIcon icon={faLinkedin} size={"2x"} />{" "}
