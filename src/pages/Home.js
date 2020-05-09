@@ -210,8 +210,13 @@ export default class HomePage extends Component {
               Intelligence, and more.
             </p> */}
           </div>
-          {/* ADD VERTICAL ALIGN */}
-          <div class="columns" style={{ textAlign: "center" }}>
+          <div
+            style={{
+              textAlign: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <div class="column">
               <a href="https://www.invensity.com/?lang=en">
                 <img src={invensityImg} alt="Invensity logo" />
