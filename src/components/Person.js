@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faInstagram,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
 export default class Person extends Component {
   render() {
     return (
@@ -41,17 +45,23 @@ export default class Person extends Component {
               <div class="content is-small">{this.props.smallText}</div>
               <div class="container">
                 {this.props.bio}
-                {this.props.link ? (
                   <div>
-                    <a href={this.props.link}>
                     {this.props.linkedIn ? (
-                      <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
-                    ) : (
-                      <FontAwesomeIcon icon={faInstagram} size={"2x"} />
-                    )}
-                    </a>
+                      <a href={this.props.linkedIn}>
+                        <FontAwesomeIcon icon={faLinkedin} size={"2x"} />{" "}
+                      </a>
+                    ) : null}
+                    {this.props.instagram ? (
+                      <a href={this.props.instagram}>
+                        <FontAwesomeIcon icon={faInstagram} size={"2x"} />{" "}
+                      </a>
+                    ) : null}
+                    {this.props.twitter ? (
+                      <a href={this.props.twitter}>
+                        <FontAwesomeIcon icon={faTwitterSquare} size={"2x"} />{" "}
+                      </a>
+                    ) : null}
                   </div>
-                ) : null}
               </div>
             </div>
           </div>

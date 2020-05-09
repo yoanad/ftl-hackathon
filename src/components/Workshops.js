@@ -39,7 +39,6 @@ export default class Workshops extends Component {
               image2={katrinImg}
               smallText={"Saturday May 23, 14:00-15:00 CEST"}
               bio={this.norbertKatrinTalkDesc()}
-              link={false}
             />
           </div>
           <div id={"ux"} class="content">
@@ -48,7 +47,6 @@ export default class Workshops extends Component {
               boldText="How to blend observations and data for better User Experience"
               image={janImg}
               smallText="Sunday May 24, 12:15-13:15 CEST"
-              link={false}
               bio={this.janDesc()}
             />
           </div>
