@@ -210,13 +210,7 @@ export default class HomePage extends Component {
               Intelligence, and more.
             </p> */}
           </div>
-          <div
-            style={{
-              textAlign: "center",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
+          <div className="alignPartnerImgs">
             <div class="column">
               <a href="https://www.invensity.com/?lang=en">
                 <img src={invensityImg} alt="Invensity logo" />
