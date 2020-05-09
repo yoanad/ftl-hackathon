@@ -98,6 +98,9 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#partner" smooth={true}>
               Partners
             </HashLink>
+            <HashLink class="navbar-item" to="/#team" smooth={true}>
+              Team
+            </HashLink>
             <a target="_blank" rel="noopener noreferrer" class="navbar-item" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
               Ideas
             </a>

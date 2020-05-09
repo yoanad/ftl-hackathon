@@ -1,9 +1,25 @@
 import React, { Component } from "react";
+import { HashLink } from "react-router-hash-link";
 import Person from "./Person";
 import deepaImg from "../images/deepa.jpg";
 import ftlLogoImg from "../images/official_logo.png";
 
 export default class Jury extends Component {
+  ftlTeam() {
+    return (
+      <div>
+        Members from the{" "}
+        <HashLink
+          style={{ color: "black", fontWeight: "bold", textDecorationLine: "underline" }}
+          to="/#team"
+          smooth={true}
+        >
+          Team
+        </HashLink>{" "}
+        will also be involved in the judging!
+      </div>
+    );
+  }
   deepaBio() {
     return (
       <div>
@@ -35,13 +51,16 @@ export default class Jury extends Component {
             boldText="Deepa Gautam-Nigge"
             bio={this.deepaBio()}
             image={deepaImg}
-            linkedIn={"https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"}
+            linkedIn={
+              "https://www.linkedin.com/in/deepa-gautam-nigge-45235633/"
+            }
             twitter={"https://twitter.com/DGN_MUC"}
           />
-          <br/><br/>
+          <br />
+          <br />
           <Person
             boldText="FTL Hackathons Team"
-            bio={"Members from the team will also be involved in the judging!"}
+            bio={this.ftlTeam()}
             image={ftlLogoImg}
             linkedIn={"https://www.linkedin.com/company/female-tech-leaders/"}
             twitter={"https://twitter.com/FTL_Munich"}

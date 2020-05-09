@@ -8,6 +8,7 @@ import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
 import Resources from "../components/Resources";
+import Team from "../components/Team";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
 import sapImg from "../images/sap.png";
@@ -197,18 +198,6 @@ export default class HomePage extends Component {
         <div className="container">
           <h3 className="title is-3">Partners</h3>
           <div className="content">
-            {/* Removing for now, possibly forever */}
-            {/* <p>
-              <a href="https://www.invensity.com/?lang=en">INVENSITY</a> is an
-              international technology and innovation consulting company with
-              offices in Germany, USA, Philippines and Spain. INVENSITY uses its
-              Academy and Technology Hub to provide an ongoing outstanding level
-              of service to renowned companies in several industries like
-              automotive, defense, aerospace, health care, and energy.
-              INVENSITY´s core specialties are Systems and Software Engineering,
-              Data Systems, Cyber Security, Analytics & Sensorics, Artificial
-              Intelligence, and more.
-            </p> */}
           </div>
           <div className="alignPartnerImgs">
             <div class="column">
@@ -262,6 +251,7 @@ export default class HomePage extends Component {
             <Resources />
           </div>
           <div id={"partner"}>{this.partner()}</div>
+          <div id={"team"}> <Team /> </div>
         </section>
         <Footer />
       </div>
