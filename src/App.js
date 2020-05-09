@@ -10,17 +10,7 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home';
-import Ideas from './pages/Ideas';
 import { auth } from './services/firebase';
-
-function PublicRoute({ component: Component, authenticated, ...rest }) {
-  return (
-    <Route
-      {...rest}
-      render={(props) => <Component {...props} />}
-    />
-  )
-}
 
 export default class App extends Component {
   constructor() {
@@ -52,7 +42,6 @@ export default class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" authenticated={this.state.authenticated} component={Home}></Route>
-          <PublicRoute path="/ideas" authenticated={this.state.authenticated} component={Ideas}></PublicRoute>
         </Switch>
       </Router>
     );
