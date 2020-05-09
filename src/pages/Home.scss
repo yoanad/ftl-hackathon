@@ -41,6 +41,12 @@ $pink: #fb41b9;
     margin: 15px 15px 0px 0px;
   }
 
+  .alignPartnerImgs {
+      text-align: center;
+      display: flex;
+      align-items: center;
+  }
+
   @include until($tablet) {
     .reverse-columns {
       flex-direction: column-reverse;
