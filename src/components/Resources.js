@@ -13,7 +13,7 @@ export default class Resources extends Component {
           The Economy, Finance: Create a stock market analysis using Yahoo
           Finance data
         </HashLink>
-        <p>
+        <div>
           Our workshop for this track will be held using{" "}
           <a href="https://www.python-course.eu/python3_history_and_philosophy.php">
             Python 3
@@ -40,7 +40,7 @@ export default class Resources extends Component {
               from Meduim.
             </li>
           </ul>
-        </p>
+        </div>
       </li>
     );
   }
@@ -55,14 +55,14 @@ export default class Resources extends Component {
         >
           Individuals and the Media: Analyze COVID-19 Tweets in Real-time
         </HashLink>
-        <p>
+        <div>
           Our workshop for this track will be held using{" "}
           <a href="https://developer.twitter.com/en/docs/labs/filtered-stream/quick-start">
             JavaScript (Node.js) with Twitter
           </a>
           . <br />
           <br />
-          <p>
+          <div>
             To participate, you are <strong>required to have a</strong>{" "}
             <a href="https://twitter.com/explore">Twitter</a> account. Please
             share it with the organizers on{" "}
@@ -74,7 +74,7 @@ export default class Resources extends Component {
               Twitter Development Team
             </a>
             , and you'll have access to the relevant credentials.
-          </p>
+          </div>
           <ul>
             <li>
               <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction">
@@ -96,7 +96,7 @@ export default class Resources extends Component {
               </a>
             </li>
           </ul>
-        </p>
+        </div>
       </li>
     );
   }

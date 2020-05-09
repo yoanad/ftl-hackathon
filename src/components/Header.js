@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { auth } from "../services/firebase";
-import { signOut } from "../helpers/auth";
 import { HashLink } from "react-router-hash-link";
 import logo from "../images/ftllogo.png";
 
@@ -8,7 +7,6 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
 
-    this.signOut = this.signOut.bind(this);
     this.handleBurgerClick = this.handleBurgerClick.bind(this);
 
     this.state = {
@@ -30,14 +28,6 @@ export default class Header extends Component {
         });
       }
     });
-  }
-
-  async signOut() {
-    try {
-      await signOut();
-    } catch (error) {
-      this.setState({ error: error.message });
-    }
   }
 
   handleBurgerClick(event) {
@@ -101,9 +91,6 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#team" smooth={true}>
               Team
             </HashLink>
-            <a target="_blank" rel="noopener noreferrer" class="navbar-item" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
-              Ideas
-            </a>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
