@@ -82,7 +82,7 @@ export default class Team extends Component {
                                 boldText="Yoanna"
                                 image={yoannaImg}
                                 smallText="Student, Media Informatics"
-                                email={"yoanna@femaletechleaders.org"}
+                                email={"yoanna.borisova@femaletechleaders.org"}
                                 linkedIn={"https://www.linkedin.com/in/yoanna-borisova/"}
                             />
                         </div>
