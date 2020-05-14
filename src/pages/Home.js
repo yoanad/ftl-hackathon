@@ -120,84 +120,23 @@ export default class HomePage extends Component {
     );
   }
 
-  timezoneWarning() {
-    return (
-      <div class="box">
-        <h3 style={{ textAlign: "center" }}>
-          <span class="tag is-warning is-large">Attention!</span>
-        </h3>
-        <p style={{ textAlign: "center" }}>
-          Female Tech Leaders is an organization based in{" "}
-          <strong>Munich, Germany</strong>, therefore all times below are in{" "}
-          <a href="https://www.timeanddate.com/time/zones/cest">
-            Central European Summer Time
-          </a>
-          .
-        </p>
-      </div>
-    );
-  }
-
-  agenda() {
-    return (
-      <section class="section">
-        <div className="container">
-          <h3 className="title is-3">Agenda</h3>
-          <div className="content">
-            {this.timezoneWarning()}
-            <article className="message is-primary">
-              <div className="message-header">
-                <p>Friday May 22, 2020</p>
-              </div>
-              <div className="message-body">
-                <p>19:00 - 20:00 - Introduction: YouTube Livestream</p>
-                <p>
-                  23:55 - Deadline to submit team name and members, and chosen
-                  track
-                </p>
-              </div>
-            </article>
-
-            <article className="message is-dark">
-              <div className="message-header">
-                <p>Saturday May 23, 2020</p>
-              </div>
-              <div className="message-body">
-                <p>
-                  10:00 - 10:30 - Welcome to Official Day 1: YouTube LiveStream
-                </p>
-                <p>10:30 - 11:30 - Workshop #1: Yahoo Finance dataset</p>
-                <p>11:30 - 12:30 - Workshop #2: Twitter Stream API</p>
-                <p>14:00 - 15:00 - Speaker #1</p>
-                <p>17:00 - 18:00 - Mid-session presentation</p>
-                <p>18:00 - 18:45 - Yoga session</p>
-              </div>
-            </article>
-
-            <article className="message is-primary">
-              <div className="message-header">
-                <p>Sunday May 24, 2020</p>
-              </div>
-              <div className="message-body">
-                <p>11:00 - Submission</p>
-                <p>11:15 - 12:15 - Speaker #2 + Judging</p>
-                <p>12:15 - 13:15 - Speaker #3 + Final pitch</p>
-                <p>14:00 - 15:00 - Present winners and top groups</p>
-                <p>Wrap-up! Thank you!</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   partner() {
     return (
       <section class="section">
         <div className="container">
           <h3 className="title is-3">Partners</h3>
           <div className="content">
+            Female Tech Leaders would like to especially thank{" "}
+            <a href="https://www.invensity.com/?lang=en">INVENSITY GmbH</a> for
+            partnering with us for our first ever online hackathon. INVENSITY is
+            an international technology and innovation consulting company with
+            offices in Germany, USA, Philippines and Spain. INVENSITY uses its
+            Academy and Technology Hub to provide an ongoing outstanding level
+            of service to renowned companies in several industries like
+            automotive, defense, aerospace, health care, and energy. INVENSITY´s
+            core specialties are Systems and Software Engineering, Data Systems,
+            Cyber Security, Analytics & Sensorics, Artificial Intelligence, and
+            more.
           </div>
           <div className="alignPartnerImgs">
             <div class="column">
@@ -251,7 +190,9 @@ export default class HomePage extends Component {
             <Resources />
           </div>
           <div id={"partner"}>{this.partner()}</div>
-          <div id={"team"}> <Team /> </div>
+          <div id={"team"}>
+            <Team />
+          </div>
         </section>
         <Footer />
       </div>

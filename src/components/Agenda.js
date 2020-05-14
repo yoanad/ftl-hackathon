@@ -1,10 +1,27 @@
 import React, { Component } from "react";
 import { HashLink } from "react-router-hash-link";
 
-const diamondSymbol = ` \u25C6 `
-const actionDiamondSymbol = ` \u25C8 `
+const diamondSymbol = ` \u25C6 `;
+const actionDiamondSymbol = ` \u25C8 `;
 
 export default class Agenda extends Component {
+  timezoneWarning() {
+    return (
+      <div class="box">
+        <h3 style={{ textAlign: "center" }}>
+          <span class="tag is-warning is-large">Attention!</span>
+        </h3>
+        <p style={{ textAlign: "center" }}>
+          Female Tech Leaders is an organization based in{" "}
+          <strong>Munich, Germany</strong>, therefore all times below are in{" "}
+          <a href="https://www.timeanddate.com/time/zones/cest">
+            Central European Summer Time
+          </a>
+          .
+        </p>
+      </div>
+    );
+  }
   friday() {
     return (
       <div class="content">
@@ -106,6 +123,7 @@ export default class Agenda extends Component {
         <div className="container">
           <h3 className="title is-3">Agenda</h3>
           <div className="content">
+            {this.timezoneWarning()}
             {this.friday()}
             {this.saturday()}
             {this.sunday()}
