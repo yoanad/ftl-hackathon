@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { HashLink } from "react-router-hash-link";
 import Person from "./Person";
 import deepaImg from "../images/deepa.jpg";
-import ftlLogoImg from "../images/official_logo.png";
+import nadineImg from "../images/nadine.jpg";
+import ftlLogoImg from "../images/ftl-jury.png";
 
 export default class Jury extends Component {
   ftlTeam() {
@@ -40,6 +41,25 @@ export default class Jury extends Component {
       </div>
     );
   }
+    nadineBio() {
+        return (
+            <div>
+                <p>
+                    Nadine is driven by the wish to change and push things forward, to create progress and innovation.
+                    She believes that there’s always room for improvement and loves to enable her customers and her
+                    colleagues to develop themselves, to help them achieve their targets.
+
+                </p>
+                <p>
+                    With a M.Sc. in physics and several years of working experience in different markets and areas, she
+                    understands herself as a generalist with a current focus of her consulting competences on technical
+                    project management. Besides that she accompanies many different roles and projects at INVENSITY and
+                    always looks for new challenges ahead.
+                </p>
+            </div>
+        );
+    }
+
   render() {
     return (
       <div class="content">
@@ -48,7 +68,17 @@ export default class Jury extends Component {
             <h3 className="title is-3">Jury</h3>
           </div>
           <Person
+              boldText="Nadine Bey"
+              smallText="Senior Consultant, INVENSITY GmbH – Physicist, Project Manager and Allrounder"
+              bio={this.nadineBio()}
+              image={nadineImg}
+              linkedIn={"https://www.linkedin.com/in/nadine-bey-557557127/"}
+              email={"nadine.bey@invensity.com"}
+          />
+         <br/><br/>
+          <Person
             boldText="Deepa Gautam-Nigge"
+            smallText={"Global Lead SAP Next-Gen Ecosystem"}
             bio={this.deepaBio()}
             image={deepaImg}
             linkedIn={
