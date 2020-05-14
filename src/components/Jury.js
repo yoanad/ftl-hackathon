@@ -78,6 +78,7 @@ export default class Jury extends Component {
          <br/><br/>
           <Person
             boldText="Deepa Gautam-Nigge"
+            smallText={"Global Lead SAP Next-Gen Ecosystem"}
             bio={this.deepaBio()}
             image={deepaImg}
             linkedIn={
