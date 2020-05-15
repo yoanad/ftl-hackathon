@@ -47,6 +47,7 @@ export default class Header extends Component {
             <a role="button"
                 class="navbar-burger burger"
                 onClick={this.handleBurgerClick}
+                href={"/#initiative"} // add this for accessibility!
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarMenu">
