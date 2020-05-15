@@ -19,7 +19,7 @@ export default class HomePage extends Component {
       <div className="container teaser level reverse-columns">
         <div className="section column teaser-text">
           <h3 className="title is-3">
-            Introduction to Big Data - COVID-19 and its Global Effects
+            Introduction to Big Data {"\u2022"} COVID-19 and its Global Effects
           </h3>
           <div class="content">
             <p>
