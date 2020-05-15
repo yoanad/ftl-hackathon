@@ -25,40 +25,33 @@ export default class Jury extends Component {
     return (
       <div>
         <p>
-          Deepa is heading the SAP Next-Gen Innovation Network in Munich. SAP
-          Next-Gen is a vibrant community for “innovation with purpose” related
-          to the UN Global Goals of sustainability. She is committed to driving
-          future innovation with SAP’s strategic and most innovative customers,
-          high class Universities and their Entrepreneurship Centers, as well as
-          top-notch Start Ups and successful Venture Firms.
-        </p>
-        <p>
-          With more than 19 years of experience in the software industry, Deepa
-          is also deputy chair of the Connected Mobility focus group in the
-          German Digital Economy Association (BVDW) and represents the interests
-          of SAP as a founding partner of Digital Hub Mobility in Munich.
+          Deepa is globally leading SAP Next-Gen Ecosystem - mainly working at the intersection of Corporate,
+          StartUps, Universities and other Educational Institutions with their associated Entrepreneurship
+          Centers as well as Venture Capitalists to inspire the next generation of decision makers and young
+          entrepreneurs working with SAP and driving corporate innovation in the era of ecosystems because of
+          the convergence of industries.
         </p>
       </div>
     );
   }
-    nadineBio() {
-        return (
-            <div>
-                <p>
-                    Nadine is driven by the wish to change and push things forward, to create progress and innovation.
-                    She believes that there’s always room for improvement and loves to enable her customers and her
-                    colleagues to develop themselves, to help them achieve their targets.
+  nadineBio() {
+    return (
+      <div>
+        <p>
+          Nadine is driven by the wish to change and push things forward, to create progress and innovation.
+          She believes that there’s always room for improvement and loves to enable her customers and her
+          colleagues to develop themselves, to help them achieve their targets.
 
                 </p>
-                <p>
-                    With a M.Sc. in physics and several years of working experience in different markets and areas, she
-                    understands herself as a generalist with a current focus of her consulting competences on technical
-                    project management. Besides that she accompanies many different roles and projects at INVENSITY and
-                    always looks for new challenges ahead.
+        <p>
+          With a M.Sc. in physics and several years of working experience in different markets and areas, she
+          understands herself as a generalist with a current focus of her consulting competences on technical
+          project management. Besides that she accompanies many different roles and projects at INVENSITY and
+          always looks for new challenges ahead.
                 </p>
-            </div>
-        );
-    }
+      </div>
+    );
+  }
 
   render() {
     return (
@@ -68,17 +61,17 @@ export default class Jury extends Component {
             <h3 className="title is-3">Jury</h3>
           </div>
           <Person
-              boldText="Nadine Bey"
-              smallText="Senior Consultant, INVENSITY GmbH – Physicist, Project Manager and Allrounder"
-              bio={this.nadineBio()}
-              image={nadineImg}
-              linkedIn={"https://www.linkedin.com/in/nadine-bey-557557127/"}
-              email={"nadine.bey@invensity.com"}
+            boldText="Nadine Bey"
+            smallText="Senior Consultant, INVENSITY GmbH – Physicist, Project Manager and Allrounder"
+            bio={this.nadineBio()}
+            image={nadineImg}
+            linkedIn={"https://www.linkedin.com/in/nadine-bey-557557127/"}
+            email={"nadine.bey@invensity.com"}
           />
-         <br/><br/>
+          <br /><br />
           <Person
             boldText="Deepa Gautam-Nigge"
-            smallText={"Global Lead SAP Next-Gen Ecosystem"}
+            smallText={"SAP SE | Global Lead SAP Next-Gen Ecosystem"}
             bio={this.deepaBio()}
             image={deepaImg}
             linkedIn={

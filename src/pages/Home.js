@@ -11,7 +11,7 @@ import Resources from "../components/Resources";
 import Team from "../components/Team";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
-import sapImg from "../images/sap.png";
+import sapImg from "../images/SAP_NextGen.png";
 
 export default class HomePage extends Component {
   initiative() {
@@ -145,8 +145,8 @@ export default class HomePage extends Component {
               </a>
             </div>
             <div class="column">
-              <a href="https://www.sap.com/">
-                <img src={sapImg} style={{ width: "30%" }} alt="Sap logo" />
+              <a href="https://www.sap.com/corporate/en/company/innovation/next-gen-innovation-platform.html">
+                <img src={sapImg} style={{ width: "45%" }} alt="Sap logo" />
               </a>
             </div>
           </div>
