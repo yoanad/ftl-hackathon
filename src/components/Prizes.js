@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Person from "./Person";
-import teaserImg from "../images/teaser.png";
+import prizeAI from "../images/a-i-head.png";
 
 export default class Prizes extends Component {
   invensityLink() {
     return (
       <div>
-        Training with{" "}
+        Artificial Intelligence workshop with{" "}
         <a
           href="https://www.invensity.com/"
           style={{ color: "black", textDecoration: "underline" }}
@@ -27,8 +27,8 @@ export default class Prizes extends Component {
           <Person
             name="First Prize"
             boldText={this.invensityLink()}
-            image={teaserImg}
-            smallText="Date/Time: TBD"
+            image={prizeAI}
+            smallText={`Date: TBD ${"\u2022"} Duration: 4 hours`}
           />
         </section>
       </div>
