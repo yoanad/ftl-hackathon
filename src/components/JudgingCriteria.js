@@ -5,11 +5,11 @@ export default class JudgingCriteria extends Component {
         super(props)
         this.state = {
             criteria: [
-                { category: 'Usefulness', desc: "fits our profile", points: 35 },
-                { category: 'Creativity', desc: "out of the box", points: 25 },
-                { category: 'Technical Complexity', desc: "complex calculation, computing", points: 20 },
-                { category: 'Results', desc:"progress made during the hackathon", points: 15 },
-                { category: 'Presentation', desc: "clear process description/demo", points: 5 }
+                { category: 'Usefulness', desc: "fits our profile", points: "35%" },
+                { category: 'Creativity', desc: "out of the box", points: "25%" },
+                { category: 'Technical Complexity', desc: "complex calculation, computing", points: "20%" },
+                { category: 'Overall Quality', desc:"progress made during the hackathon", points: "15%" },
+                { category: 'Presentation', desc: "clear process description/demo", points: "5%" }
             ]
         }
     }
