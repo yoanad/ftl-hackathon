@@ -7,6 +7,7 @@ import Agenda from "../components/Agenda";
 import Yoga from "../components/Yoga";
 import Jury from "../components/Jury";
 import Prizes from "../components/Prizes";
+import JudgingCriteria from "../components/JudgingCriteria";
 import Resources from "../components/Resources";
 import Team from "../components/Team";
 import teaserImg from "../images/teaser.png";
@@ -185,6 +186,9 @@ export default class HomePage extends Component {
           </div>
           <div id={"prizes"}>
             <Prizes />
+          </div>
+          <div id={"judgingCriteria"}>
+            <JudgingCriteria />
           </div>
           <div id={"resources"}>
             <Resources />
