@@ -83,6 +83,9 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#prizes" smooth={true}>
               Prizes
             </HashLink>
+            <HashLink class="navbar-item" to="/#judgingCriteria" smooth={true}>
+             Judging Criteria
+            </HashLink>
             <HashLink class="navbar-item" to="/#resources" smooth={true}>
               Resources
             </HashLink>
