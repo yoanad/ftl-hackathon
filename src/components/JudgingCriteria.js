@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 const criteria = [
-    { category: 'Usefulness', desc: "how does it fit the theme of Big Data/how COVID-19 is affecting", points: "35" },
+    { category: 'Usefulness', desc: "does it fit the theme of Big Data/how COVID-19 is affecting us/the world", points: "35" },
     { category: 'Creativity', desc: "out of the box", points: "25" },
     { category: 'Technical Complexity', desc: "complex calculation, computing", points: "20" },
     { category: 'Overall Quality', desc: "progress made during the hackathon", points: "15" },
