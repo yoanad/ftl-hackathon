@@ -107,14 +107,12 @@ export default class Prizes extends Component {
                         name={`Top 3 teams`}
                         boldText={this.socialMediaPromotionTitle()}
                         image={socialMedia}
-                        // smallText={`Date: TBD ${"\u2022"} Duration: 4 hours`}
                         bio={this.socialMediaPrizeDesc()}
                     />
                     <Person
                         name={`Everyone`}
                         boldText={this.participationCertiTitle()}
                         image={prizeFTL}
-                        // smallText={`Date: TBD ${"\u2022"} Duration: 4 hours`}
                         bio={this.participationCertiDesc()}
                     />
                 </section>
