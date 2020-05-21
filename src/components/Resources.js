@@ -37,7 +37,7 @@ export default class Resources extends Component {
               <a href="https://medium.com/the-era-of-apis/build-your-own-stock-charts-with-yahoo-finance-api-and-python-917e9f6d6715">
                 Build Your Own Stock Charts with Yahoo Finance API and Python
               </a>{" "}
-              from Meduim.
+              from Medium.
             </li>
           </ul>
         </div>
