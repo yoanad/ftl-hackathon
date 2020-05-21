@@ -78,7 +78,7 @@ export default class Agenda extends Component {
                 Empower yourself - unlock your potential
               </HashLink>
             </p>
-            <p>17:00 - 18:00{diamondSymbol} Mid-session presentation</p>
+            <p>17:00 - 18:00{diamondSymbol} Mid-session check in with mentors</p>
             <p>18:00 - 18:45{actionDiamondSymbol}
             <HashLink
                 style={{ color: "black", fontWeight: "bold" }}
