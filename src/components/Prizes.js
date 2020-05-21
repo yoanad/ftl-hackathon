@@ -103,6 +103,7 @@ export default class Prizes extends Component {
                         smallText={`Date: TBD ${"\u2022"} Duration: 4 hours`}
                         bio={this.invensityPrizeDesc()}
                     />
+                    <br/><br/>
                     <Person
                         name={`Top 3 teams`}
                         boldText={this.socialMediaPromotionTitle()}
