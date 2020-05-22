@@ -102,7 +102,7 @@ export default class Agenda extends Component {
           <div className="message-body">
             <p>11:00{actionDiamondSymbol} <strong>Submission</strong></p>
             <p>11:15 - 14:00{diamondSymbol} Judging</p>
-            <p>12:15 - 13:15{actionDiamondSymbol}<HashLink
+            <p>12:00 - 13:00{actionDiamondSymbol}<HashLink
                 style={{ color: "auto", fontWeight: "bold" }}
                 to="/#ux"
                 smooth={true}
