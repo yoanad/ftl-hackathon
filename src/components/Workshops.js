@@ -44,7 +44,7 @@ export default class Workshops extends Component {
               name="Jan Binczyk"
               boldText="How to blend observations and data for better User Experience"
               image={uxImg}
-              smallText="Sunday May 24, 12:15-13:15 CEST"
+              smallText="Sunday May 24, 12:00-13:00 CEST"
               bio={this.janDesc()}
             />
           </div>
