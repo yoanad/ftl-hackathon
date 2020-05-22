@@ -17,26 +17,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default class HomePage extends Component {
-  weAreLive() {
+  youTubeLive() {
     return (
-      <div class="box" style={{ backgroundColor: "purple" }}>
-        <div style={{ color: "white", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ textAlign: "center" }}>
-            <FontAwesomeIcon icon={faYoutube} size={"2x"} style={{ color: "red" }} />
-            <div>
-              <span class="is-large">
-                <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
-                  {`Click here`}
-                </a>{" "}{" to see the kickoff presentation!"}
-              </span>
-            </div>
-          </div>
-        </div>
-        {/* Scheduled Events */}
+      <div class="box" style={{ backgroundColor: "purple", paddingTop: "15px" }}>
         <div style={{ textAlign: "center" }}>
-          <div class="box" style={{ backgroundColor: "white", display: "inline-block", width: "fit-content", marginTop: "15px" }}>
-            <p style={{ textAlign: "left"}} ><a href="https://youtu.be/XYLDEQg3yCw">[Scheduled]</a>{" "}Workshop: View Tweets using the Twitter API</p>
-            <p><a href="https://youtu.be/ZzGDaGb6IpQ">[Scheduled]</a>{" "}Presentation: How to blend observations and data for better User Experience</p>
+          <div class="box" style={{ display: "inline-block", width: "fit-content" }}>
+            <p style={{ fontSize: "x-large" }}>Join us <strong>LIVE</strong> on YouTube!</p>
+            <p>Click below for all streamed and upcoming events</p>
+            <a href="https://www.youtube.com/channel/UC4J2aYTAVhaS_UvDyVCMUQg/videos?view=2&flow=grid">
+            <FontAwesomeIcon icon={faYoutube} size={"5x"} style={{ color: "red" }} /></a>
           </div>
         </div>
       </div>
@@ -194,7 +183,7 @@ export default class HomePage extends Component {
               FTL's first online hackathon!
             </h1>
           </div>
-          <div>{this.weAreLive()}</div>
+          <div>{this.youTubeLive()}</div>
           <div id={"initiative"}>{this.initiative()}</div>
           <div id={"tracks"}>{this.tracks()}</div>
           <div id={"agenda"}>
