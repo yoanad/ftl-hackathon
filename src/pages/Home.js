@@ -13,8 +13,25 @@ import Team from "../components/Team";
 import teaserImg from "../images/teaser.png";
 import invensityImg from "../images/invensity.png";
 import sapImg from "../images/SAP_NextGen.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default class HomePage extends Component {
+  weAreLive() {
+    return (
+      <div class="box" style={{ backgroundColor: "purple" }}>
+        <h3 style={{ textAlign: "center" }}>
+          <div style={{ color: "white" }}>
+            <span class="is-large">
+              <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
+                {`Click here`}
+              </a></span> {" to join us LIVE on YouTube "}
+            <FontAwesomeIcon icon={faYoutube} size={"2x"} />{" "}
+          </div>
+        </h3>
+      </div>
+    )
+  }
   initiative() {
     return (
       <div className="container teaser level reverse-columns">
@@ -48,12 +65,12 @@ export default class HomePage extends Component {
               professions to COVID-19 and other related datasets, and make sense
               of it!
             </p>
-            <a
+            {/* <a
               className="button is-primary"
               href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform"
             >
               Register as a participant
-            </a>
+            </a> */}
             <a className="button is-dark" href="https://discord.gg/SceNNxY">
               Join the discussion on Discord
             </a>
@@ -167,6 +184,7 @@ export default class HomePage extends Component {
               FTL's first online hackathon!
             </h1>
           </div>
+          <div>{this.weAreLive()}</div>
           <div id={"initiative"}>{this.initiative()}</div>
           <div id={"tracks"}>{this.tracks()}</div>
           <div id={"agenda"}>

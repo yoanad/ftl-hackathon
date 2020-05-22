@@ -99,11 +99,11 @@ export default class Header extends Component {
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a
+                {/* <a
                 className="button is-primary"
                 href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform">
                 Register as a participant
-                </a>
+                </a> */}
                 <a target="_blank" rel="noopener noreferrer" className="button" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
                   Submit idea
                 </a>
