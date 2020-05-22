@@ -19,24 +19,26 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 export default class HomePage extends Component {
   weAreLive() {
     return (
-      <div class="box" style={{ backgroundColor: "purple", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <h3 style={{ textAlign: "center" }}>
-        <FontAwesomeIcon icon={faYoutube} size={"2x"} style={{ color: "red" }} />
-        <div style={{ color: "white" }}>
-          <span class="is-large">
-            <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
-              {`Click here`}
-            </a>{" "}{" to see the kickoff presentation!"}
-          </span>
+      <div class="box" style={{ backgroundColor: "purple" }}>
+        <div style={{ color: "white", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ textAlign: "center" }}>
+            <FontAwesomeIcon icon={faYoutube} size={"2x"} style={{ color: "red" }} />
+            <div>
+              <span class="is-large">
+                <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
+                  {`Click here`}
+                </a>{" "}{" to see the kickoff presentation!"}
+              </span>
+            </div>
+          </div>
         </div>
-        {/* <div>
-          <span class="is-large">
-            <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
-              {`Next scheduled event`}
-            </a>
-          </span>
-        </div> */}
-        </h3>
+        {/* Scheduled Events */}
+        <div style={{ textAlign: "center" }}>
+          <div class="box" style={{ backgroundColor: "white", display: "inline-block", width: "fit-content", marginTop: "15px" }}>
+            <p style={{ textAlign: "left"}} ><a href="https://youtu.be/XYLDEQg3yCw">[Scheduled]</a>{" "}Workshop: View Tweets using the Twitter API</p>
+            <p><a href="https://youtu.be/ZzGDaGb6IpQ">[Scheduled]</a>{" "}Presentation: : How to blend observations and data for better User Experience</p>
+          </div>
+        </div>
       </div>
     )
   }
