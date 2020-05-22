@@ -36,7 +36,7 @@ export default class HomePage extends Component {
         <div style={{ textAlign: "center" }}>
           <div class="box" style={{ backgroundColor: "white", display: "inline-block", width: "fit-content", marginTop: "15px" }}>
             <p style={{ textAlign: "left"}} ><a href="https://youtu.be/XYLDEQg3yCw">[Scheduled]</a>{" "}Workshop: View Tweets using the Twitter API</p>
-            <p><a href="https://youtu.be/ZzGDaGb6IpQ">[Scheduled]</a>{" "}Presentation: : How to blend observations and data for better User Experience</p>
+            <p><a href="https://youtu.be/ZzGDaGb6IpQ">[Scheduled]</a>{" "}Presentation: How to blend observations and data for better User Experience</p>
           </div>
         </div>
       </div>
