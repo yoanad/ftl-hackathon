@@ -19,15 +19,23 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 export default class HomePage extends Component {
   weAreLive() {
     return (
-      <div class="box" style={{ backgroundColor: "purple" }}>
+      <div class="box" style={{ backgroundColor: "purple", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <h3 style={{ textAlign: "center" }}>
-          <div style={{ color: "white" }}>
-            <span class="is-large">
-              <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
-                {`Click here`}
-              </a></span> {" to join us LIVE on YouTube "}
-            <FontAwesomeIcon icon={faYoutube} size={"2x"} />{" "}
-          </div>
+        <FontAwesomeIcon icon={faYoutube} size={"2x"} style={{ color: "red" }} />
+        <div style={{ color: "white" }}>
+          <span class="is-large">
+            <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
+              {`Click here`}
+            </a>{" "}{" to see our latest YouTube Live Stream"}
+          </span>
+        </div>
+        {/* <div>
+          <span class="is-large">
+            <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
+              {`Next scheduled event`}
+            </a>
+          </span>
+        </div> */}
         </h3>
       </div>
     )
