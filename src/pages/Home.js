@@ -26,7 +26,7 @@ export default class HomePage extends Component {
           <span class="is-large">
             <a href="https://www.youtube.com/watch?v=Df5pdZLAuQw" style={{ color: "white", fontWeight: "bold", textDecoration: "underline" }}>
               {`Click here`}
-            </a>{" "}{" to see our latest YouTube Live Stream"}
+            </a>{" "}{" to see the kickoff presentation!"}
           </span>
         </div>
         {/* <div>
