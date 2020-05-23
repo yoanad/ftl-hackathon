@@ -24,7 +24,7 @@ export default class HomePage extends Component {
           <div class="box" style={{ display: "inline-block", width: "fit-content" }}>
             <p style={{ fontSize: "x-large" }}>Join us <strong>LIVE</strong> on YouTube!</p>
             <p>Click below for all streamed and upcoming events</p>
-            <a href="https://www.youtube.com/channel/UC4J2aYTAVhaS_UvDyVCMUQg/videos?view=2&flow=grid">
+            <a href="https://www.youtube.com/playlist?list=PLxRIXQdxuPgQHjW2lkPeLQkJEmzHJuWDy">
             <FontAwesomeIcon icon={faYoutube} size={"5x"} style={{ color: "red" }} /></a>
           </div>
         </div>
