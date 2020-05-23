@@ -123,9 +123,8 @@ export default class Agenda extends Component {
                             How to blend observations and data for better User Experience**
                         </HashLink></p>
                         <p>12:45 - 13:00{diamondSymbol} Judges Deliberate</p>
-                        <p>13:00 - 13:15{diamondSymbol} Present winners and top groups</p>
-                        <p>13:15 - 13:30{diamondSymbol} Wrap-up! Thank you!</p>
-                        <p style={{textAlign: "right"}}>**Workshop cancelled due to unforeseen circumstances! Apologies
+                        <p>13:00 - 13:30{diamondSymbol} Present winners and top groups {diamondSymbol}Wrap-up! Thank you!</p>
+                        <p style={{textAlign: "right", fontSize: "x-small" }}>**Workshop cancelled due to unforeseen circumstances! Apologies
                             for the inconvenience.</p>
                     </div>
                 </article>
