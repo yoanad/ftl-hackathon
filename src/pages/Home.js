@@ -15,61 +15,19 @@ import invensityImg from "../images/invensity.png";
 import sapImg from "../images/SAP_NextGen.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faAward, faHandHolding, faBlog } from "@fortawesome/free-solid-svg-icons";
 
 export default class HomePage extends Component {
-  // blog() {
-  //   return (
-  //     <div style={{ textAlign: "center", padding: "8px" }}>
-  //       <div class="box" style={{ width: "fit-content" }}>
-  //         <p style={{ fontSize: "x-large" }}>Blog Post</p>
-  //         <FontAwesomeIcon icon={faBlog} size={"5x"} />
-  //       </div>
-  //     </div>
-  //   )
-  // }
-  submissions() {
-    return (
-      <div style={{ textAlign: "center", padding: "8px" }}>
-        <div class="box" style={{ width: "fit-content" }}>
-          <p style={{ fontSize: "x-large" }}>Submissions</p>
-          <FontAwesomeIcon icon={faHandHolding} size={"5x"} />
-        </div>
-      </div>
-    )
-  }
-  winners() {
-    return (
-      <div style={{ textAlign: "center", padding: "8px" }}>
-        <div class="box" style={{ width: "fit-content" }}>
-          <p style={{ fontSize: "x-large" }}>Winners</p>
-          <FontAwesomeIcon icon={faAward} size={"5x"} />
-        </div>
-      </div>
-    )
-  }
   youTubeLive() {
     return (
-      <div style={{ textAlign: "center", padding: "8px" }}>
-        <div class="box" style={{ width: "fit-content" }}>
-          <p style={{ fontSize: "x-large" }}>Streamed on YouTube</p>
-          <a href="https://www.youtube.com/playlist?list=PLxRIXQdxuPgQHjW2lkPeLQkJEmzHJuWDy">
-            <FontAwesomeIcon icon={faYoutube} size={"5x"} style={{ color: "#4a4a4a" }} /></a>
+      <div class="box" style={{ backgroundColor: "purple", paddingTop: "15px" }}>
+        <div style={{ textAlign: "center" }}>
+          <div class="box" style={{ display: "inline-block", width: "fit-content" }}>
+            <p style={{ fontSize: "x-large" }}>Join us <strong>LIVE</strong> on YouTube!</p>
+            <p>Click below for all streamed and upcoming events</p>
+            <a href="https://www.youtube.com/playlist?list=PLxRIXQdxuPgQHjW2lkPeLQkJEmzHJuWDy">
+            <FontAwesomeIcon icon={faYoutube} size={"5x"} style={{ color: "red" }} /></a>
+          </div>
         </div>
-      </div>
-    )
-  }
-  eventsHighlight() {
-    return (
-      <div class="box" style={{
-        backgroundColor: "purple", paddingTop: "15px", display: "flex",
-        flexWrap: "wrap",
-        placeContent: "center"
-      }}>
-        {this.youTubeLive()}
-        {this.submissions()}
-        {this.winners()}
-        {/* {this.blog()} */}
       </div>
     )
   }
@@ -221,12 +179,11 @@ export default class HomePage extends Component {
         <section className="Home">
           <div className="container welcome-container">
             <h1 className="title is-1 welcome-title">
-              {/* Welcome to <br /> */}
-              Thank you for participating in
+              Welcome to <br />
               FTL's first online hackathon!
             </h1>
           </div>
-          <div>{this.eventsHighlight()}</div>
+          <div>{this.youTubeLive()}</div>
           <div id={"initiative"}>{this.initiative()}</div>
           <div id={"tracks"}>{this.tracks()}</div>
           <div id={"agenda"}>
