@@ -33,7 +33,7 @@ export default class HomePage extends Component {
       <div style={{ textAlign: "center", padding: "8px" }}>
         <div class="box" style={{ width: "fit-content" }}>
           <p style={{ fontSize: "x-large" }}>Submissions</p>
-          <FontAwesomeIcon icon={faHandHolding} size={"5x"} />
+          <a href="https://github.com/yoanad/ftl-hackathon/blob/master/THE_HACKATHON.md#submissions"><FontAwesomeIcon icon={faHandHolding} size={"5x"} /></a>
         </div>
       </div>
     )
@@ -43,7 +43,7 @@ export default class HomePage extends Component {
       <div style={{ textAlign: "center", padding: "8px" }}>
         <div class="box" style={{ width: "fit-content" }}>
           <p style={{ fontSize: "x-large" }}>Winners</p>
-          <FontAwesomeIcon icon={faAward} size={"5x"} />
+          <a href="https://github.com/yoanad/ftl-hackathon/blob/master/THE_HACKATHON.md#winners"><FontAwesomeIcon icon={faAward} size={"5x"} /></a>
         </div>
       </div>
     )
@@ -54,7 +54,7 @@ export default class HomePage extends Component {
         <div class="box" style={{ width: "fit-content" }}>
           <p style={{ fontSize: "x-large" }}>Streamed on YouTube</p>
           <a href="https://www.youtube.com/playlist?list=PLxRIXQdxuPgQHjW2lkPeLQkJEmzHJuWDy">
-            <FontAwesomeIcon icon={faYoutube} size={"5x"} style={{ color: "#4a4a4a" }} /></a>
+            <FontAwesomeIcon icon={faYoutube} size={"5x"} /></a>
         </div>
       </div>
     )
