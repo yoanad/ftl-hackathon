@@ -23,13 +23,14 @@ Huge congratulations to team Baddies in STEM, and first-time hackathon participa
 Team Baddies in STEM focused our project on finding the best states for post-bachelor degree graduates to live/find work given the conditions that our society is facing due to the economic crisis caused by COVID-19. Factors we considered when determining the best states to live in (conclusions vary by industry) include the following: comparison of unemployment rates before and during the pandemic (and what industries states profit off of), a "recovery score" (takes into account quality of the state's healthcare system and population density), characteristics of each state's workforce prior to the current economic crisis, and salary/cost of living (as most graduates deal with student loans straight out of college). Learn more about our project, the website we created to display our findings, and the conclusions for five different degrees/industries on GitHub! (under user gayleviolano). [Github](https://github.com/gayleviolano/FTLHacks).
 
 # [Submissions](#submissions)
-1. Team 089: [Topic Modelling of COVID-19 related tweets using Python](https://github.com/karolinams/FTL-TopicModeling)
-1. Circuit Breaker [Sentiment analysis on #WFH using the Twitter Full Archive API](https://github.com/wailunlim/circuit-breaker)
-1. Baddies in STEM: [Finding a Job as a Graduate in the Era of COVID-19](https://github.com/gayleviolano/FTLHacks)
-1. CrownPride: [Sentiment Analysis of COVID-19 related tweets and its impact on Equities](https://github.com/maha-93/COVID19)
-1. Quatrefoil: [The Developing Sentiment Towards Face Masks](https://github.com/MSWulbers/FTL-Hackathon-0520-Team-Quatrefoil)
-1. Confifi: [Financial risk management during Covid-19](https://github.com/rgcalsaverini/confifi)
+- Team 089: [Topic Modelling of COVID-19 related tweets using Python](https://github.com/karolinams/FTL-TopicModeling)
+- Circuit Breaker [Sentiment analysis on #WFH using the Twitter Full Archive API](https://github.com/wailunlim/circuit-breaker)
+- Baddies in STEM: [Finding a Job as a Graduate in the Era of COVID-19](https://github.com/gayleviolano/FTLHacks)
+- CrownPride: [Sentiment Analysis of COVID-19 related tweets and its impact on Equities](https://github.com/maha-93/COVID19)
+- Quatrefoil: [The Developing Sentiment Towards Face Masks](https://github.com/MSWulbers/FTL-Hackathon-0520-Team-Quatrefoil)
+- Confifi: [Financial risk management during Covid-19](https://github.com/rgcalsaverini/confifi)
 
 # [Workshops](#workshops)
-1. [View Tweets using the Twitter API](https://github.com/yoanad/ftl-twitter-workshop)
-1. [Yahoo Finance Data Workshop](https://github.com/ashmibanerjee/FTL-bigdatahack-yahoo-starter/blob/master/FTL_finance_track.ipynb)
+- [View Tweets using the Twitter API](https://github.com/yoanad/ftl-twitter-workshop)
+- [Yahoo Finance Data Workshop](https://github.com/ashmibanerjee/FTL-bigdatahack-yahoo-starter/blob/master/FTL_finance_track.ipynb)
+- Resources for Empower Yourself can be found at [Norbert Distler's website](https://www.norbert-distler.de/empowerment)
