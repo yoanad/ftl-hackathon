@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Followed this tutorial: https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/ 
 
+Official Website: https://bigdatahack.femaletechleaders.org/
+
 # Installation
 1. Install dependencies
 `npm install`
