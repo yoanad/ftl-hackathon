@@ -18,16 +18,16 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faAward, faHandHolding, faBlog } from "@fortawesome/free-solid-svg-icons";
 
 export default class HomePage extends Component {
-  // blog() {
-  //   return (
-  //     <div style={{ textAlign: "center", padding: "8px" }}>
-  //       <div class="box" style={{ width: "fit-content" }}>
-  //         <p style={{ fontSize: "x-large" }}>Blog Post</p>
-  //         <FontAwesomeIcon icon={faBlog} size={"5x"} />
-  //       </div>
-  //     </div>
-  //   )
-  // }
+  blog() {
+    return (
+      <div style={{ textAlign: "center", padding: "8px" }}>
+        <div class="box" style={{ width: "fit-content" }}>
+          <p style={{ fontSize: "x-large" }}>Blog Post</p>
+          <a href="https://www.femaletechleaders.org/blog/exploring-the-global-effects-of-covid-19-with-data"><FontAwesomeIcon icon={faBlog} size={"5x"} /></a>
+        </div>
+      </div>
+    )
+  }
   submissions() {
     return (
       <div style={{ textAlign: "center", padding: "8px" }}>
@@ -66,10 +66,10 @@ export default class HomePage extends Component {
         flexWrap: "wrap",
         placeContent: "center"
       }}>
+        {this.blog()}
         {this.youTubeLive()}
         {this.submissions()}
         {this.winners()}
-        {/* {this.blog()} */}
       </div>
     )
   }
