@@ -1,9 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
-Followed this tutorial: https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/ 
-
 Official Website: https://bigdatahack.femaletechleaders.org/
+
+# [Recap & winners] (https://github.com/yoanad/ftl-hackathon/blob/master/THE_HACKATHON.md)
 
 # Installation
 1. Install dependencies
@@ -21,3 +18,7 @@ For the sake of speedy development, I used Bulma for styling the elements. Pleas
 
 The theme can be modified in `App.scss`, where we can add our brand colors, once we have a final design.
 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Followed this tutorial: https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/ 
