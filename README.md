@@ -1,6 +1,6 @@
 Official Website: https://bigdatahack.femaletechleaders.org/
 
-# [Recap & winners] (https://github.com/yoanad/ftl-hackathon/blob/master/THE_HACKATHON.md)
+# [Recap & winners](https://github.com/yoanad/ftl-hackathon/blob/master/THE_HACKATHON.md)
 
 # Installation
 1. Install dependencies
