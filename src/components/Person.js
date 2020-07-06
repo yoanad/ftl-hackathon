@@ -33,22 +33,22 @@ export default class Person extends Component {
                 <div>
                   {this.props.email ? (
                     <a href={`mailto:${this.props.email}`}>
-                      <FontAwesomeIcon icon={faEnvelopeSquare} size={"2x"} />{" "}
+                      <FontAwesomeIcon icon={faEnvelopeSquare} size={"2x"} style={{color: "#ec8c94"}} />{" "}
                     </a>
                   ) : null}
                   {this.props.linkedIn ? (
                     <a href={this.props.linkedIn}>
-                      <FontAwesomeIcon icon={faLinkedin} size={"2x"} />{" "}
+                      <FontAwesomeIcon icon={faLinkedin} size={"2x"} style={{color: "#ec8c94"}}/>{" "}
                     </a>
                   ) : null}
                   {this.props.instagram ? (
                     <a href={this.props.instagram}>
-                      <FontAwesomeIcon icon={faInstagram} size={"2x"} />{" "}
+                      <FontAwesomeIcon icon={faInstagram} size={"2x"} style={{color: "#ec8c94"}}/>{" "}
                     </a>
                   ) : null}
                   {this.props.twitter ? (
                     <a href={this.props.twitter}>
-                      <FontAwesomeIcon icon={faTwitterSquare} size={"2x"} />{" "}
+                      <FontAwesomeIcon icon={faTwitterSquare} size={"2x"} style={{color: "#ec8c94"}}/>{" "}
                     </a>
                   ) : null}
                 </div>

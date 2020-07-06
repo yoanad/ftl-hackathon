@@ -62,53 +62,21 @@ export default class Header extends Component {
             <HashLink class="navbar-item" to="/#initiative" smooth={true}>
               Initiative
             </HashLink>
-            <HashLink class="navbar-item" to="/#tracks" smooth={true}>
-              Tracks
-            </HashLink>
-            <HashLink class="navbar-item" to="/#agenda" smooth={true}>
-              Agenda
-            </HashLink>
-            <HashLink class="navbar-item" to="/#workshops" smooth={true}>
-              Workshops
-            </HashLink>
-            <HashLink class="navbar-item" to="/#speakers" smooth={true}>
-              Speakers
-            </HashLink>
-            <HashLink class="navbar-item" to="/#yoga" smooth={true}>
-              Yoga
-            </HashLink>
-            <HashLink class="navbar-item" to="/#jury" smooth={true}>
-              Jury
-            </HashLink>
-            <HashLink class="navbar-item" to="/#prizes" smooth={true}>
-              Prizes
-            </HashLink>
-            <HashLink class="navbar-item" to="/#judgingCriteria" smooth={true}>
-             Judging Criteria
-            </HashLink>
-            <HashLink class="navbar-item" to="/#resources" smooth={true}>
-              Resources
-            </HashLink>
-            <HashLink class="navbar-item" to="/#partner" smooth={true}>
-              Partners
-            </HashLink>
             <HashLink class="navbar-item" to="/#team" smooth={true}>
               Team
             </HashLink>
+            <HashLink class="navbar-item" to="/#archive" smooth={true}>
+              Events Archive
+            </HashLink>
+            <HashLink class="navbar-item" to="/#collaborations" smooth={true}>
+              Collaborations
+            </HashLink>
+            <HashLink class="navbar-item" to="/#contact" smooth={true}>
+              Contact
+            </HashLink>
           </div>
           <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                {/* <a
-                className="button is-primary"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform">
-                Register as a participant
-                </a> */}
-                <a target="_blank" rel="noopener noreferrer" className="button" href="https://docs.google.com/document/d/19zO-lmoBbs2vjGYzTn5dCXPMTnEd6nIyARHrtqZL-Iw/edit?usp=sharing">
-                  Submit idea
-                </a>
-              </div>
-            </div>
+
           </div>
         </div>
       </nav>

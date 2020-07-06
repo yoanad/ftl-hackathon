@@ -1,78 +1,53 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Speakers from "../components/Speakers";
-import Workshops from "../components/Workshops";
-import Agenda from "../components/Agenda";
-import Yoga from "../components/Yoga";
-import Jury from "../components/Jury";
-import Prizes from "../components/Prizes";
-import JudgingCriteria from "../components/JudgingCriteria";
-import Resources from "../components/Resources";
+import Collaborations from "../components/Collaborations";
+import Contact from "../components/Contact";
 import Team from "../components/Team";
 import teaserImg from "../images/teaser.png";
-import invensityImg from "../images/invensity.png";
-import sapImg from "../images/SAP_NextGen.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default class HomePage extends Component {
-  youTubeLive() {
-    return (
-      <div class="box" style={{ backgroundColor: "purple", paddingTop: "15px" }}>
-        <div style={{ textAlign: "center" }}>
-          <div class="box" style={{ display: "inline-block", width: "fit-content" }}>
-            <p style={{ fontSize: "x-large" }}>Join us <strong>LIVE</strong> on YouTube!</p>
-            <p>Click below for all streamed and upcoming events</p>
-            <a href="https://www.youtube.com/playlist?list=PLxRIXQdxuPgQHjW2lkPeLQkJEmzHJuWDy">
-            <FontAwesomeIcon icon={faYoutube} size={"5x"} style={{ color: "red" }} /></a>
-          </div>
-        </div>
-      </div>
-    )
-  }
+
   initiative() {
     return (
-      <div className="container teaser level reverse-columns">
-        <div className="section column teaser-text">
-          <h3 className="title is-3">
-            Introduction to Big Data {"\u2022"} COVID-19 and its Global Effects
-          </h3>
-          <div class="content">
-            <p>
-              Since the beginning of this year, COVID-19 has made its way around
-              the world, severely impacting healthcare, the economy and our
-              climate. It has directly affected everyone’s lives, as we either
-              stay at home or work essential jobs, and watch in real-time as
-              scientists and politicians gain a better understanding of the
-              virus.
-            </p>
-            <p>
-              While living in a globalized world has certainly accelerated the
-              spread and reach of COVID-19, it has also allowed for a
-              collaborative effort among countries for research and reporting.
-              To this end, the amount of free, open-source data that has been
-              made available to the public provides us with a unique opportunity
-              to understand and gain insights to this pandemic.
-            </p>
-            <p>
-              <a href="https://www.femaletechleaders.org/">
-                Female Tech Leaders{" "}
-              </a>
-              therefore is proud to invite you to participate in our first ever
-              virtual Hackathon. We will introduce people of all genders and
-              professions to COVID-19 and other related datasets, and make sense
-              of it!
-            </p>
-            {/* <a
+        <div className="container teaser level reverse-columns">
+          <div className="section column teaser-text">
+            {/*<h3 className="title is-3">*/}
+            {/*  Introduction to Big Data {"\u2022"} COVID-19 and its Global Effects*/}
+            {/*</h3>*/}
+            <div class="content">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            { <a
               className="button is-primary"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScKpY8NTCoHA4bewbCyb0B50uxnHLkEtkPE-hYXvR81VRN_lQ/viewform"
+              href="https://docs.google.com/presentation/d/15xQziiW22bpXhwP8vMLa7YIy7SsnFOx579KqeY0y2H0/edit?usp=sharing"
             >
-              Register as a participant
-            </a> */}
-            <a className="button is-dark" href="https://discord.gg/SceNNxY">
-              Join the discussion on Discord
-            </a>
+             Download Slide-deck
+            </a> }
           </div>
         </div>
         <div className="column teaser-image">
@@ -137,85 +112,34 @@ export default class HomePage extends Component {
     );
   }
 
-  partner() {
-    return (
-      <section class="section">
-        <div className="container">
-          <h3 className="title is-3">Partners</h3>
-          <div className="content">
-            Female Tech Leaders would like to especially thank{" "}
-            <a href="https://www.invensity.com/?lang=en">INVENSITY GmbH</a> for
-            partnering with us for our first ever online hackathon. INVENSITY is
-            an international technology and innovation consulting company with
-            offices in Germany, USA, Philippines and Spain. INVENSITY uses its
-            Academy and Technology Hub to provide an ongoing outstanding level
-            of service to renowned companies in several industries like
-            automotive, defense, aerospace, health care, and energy. INVENSITY´s
-            core specialties are Systems and Software Engineering, Data Systems,
-            Cyber Security, Analytics & Sensorics, Artificial Intelligence, and
-            more.
-          </div>
-          <div className="alignPartnerImgs">
-            <div class="column">
-              <a href="https://www.invensity.com/?lang=en">
-                <img src={invensityImg} alt="Invensity logo" />
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://www.sap.com/corporate/en/company/innovation/next-gen-innovation-platform.html">
-                <img src={sapImg} style={{ width: "45%" }} alt="Sap logo" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
 
   render() {
+
     return (
       <div>
         <Header />
         <section className="Home">
           <div className="container welcome-container">
             <h1 className="title is-1 welcome-title">
-              Welcome to <br />
-              FTL's first online hackathon!
+              Welcome to <br/></h1>
+            <h1 className="title is-1 welcome-title" style={{color: "#ec8c94", fontWeight: "bold"}}> Female Tech
+              Leaders </h1>
+            <h1 className="title is-1 welcome-title">Hackathons!
             </h1>
           </div>
-          <div>{this.youTubeLive()}</div>
           <div id={"initiative"}>{this.initiative()}</div>
-          <div id={"tracks"}>{this.tracks()}</div>
-          <div id={"agenda"}>
-            <Agenda />
-          </div>
-          <div id={"workshops"}>
-            <Workshops />
-          </div>
-          <div id={"speakers"}>
-            <Speakers />
-          </div>
-          <div id={"yoga"}>
-            <Yoga />
-          </div>
-          <div id={"jury"}>
-            <Jury />
-          </div>
-          <div id={"prizes"}>
-            <Prizes />
-          </div>
-          <div id={"judgingCriteria"}>
-            <JudgingCriteria />
-          </div>
-          <div id={"resources"}>
-            <Resources />
-          </div>
-          <div id={"partner"}>{this.partner()}</div>
           <div id={"team"}>
-            <Team />
+            <Team/>
           </div>
+          {/*<div id={"collaboration"}>*/}
+          {/*  <Collaborations/>*/}
+          {/*</div>*/}
+          <div id={"contact"}>
+            <Contact/>
+          </div>
+
         </section>
-        <Footer />
+        <Footer/>
       </div>
     );
   }
